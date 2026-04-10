@@ -55,6 +55,8 @@ const resultModuleLoaders = {
   }),
 };
 
+const IS_PROD = import.meta.env.PROD;
+const USE_RESULT_CACHE = IS_PROD;
 const resultCache = new Map();
 
 export async function loadResultPreset(code) {
@@ -62,11 +64,25 @@ export async function loadResultPreset(code) {
     return null;
   }
 
-  if (resultCache.has(code)) {
+  if (USE_RESULT_CACHE && resultCache.has(code)) {
     return resultCache.get(code);
   }
 
   const resultPath = `./results/${code[0]}/${code[1]}/${code[2]}/${code[3]}.json`;
+
+  if (!IS_PROD) {
+    const url = new URL(resultPath, import.meta.url);
+    url.searchParams.set('t', String(Date.now()));
+
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Failed to fetch result file for code "${code}"`);
+    }
+
+    const entries = await response.json();
+    return entries.find((item) => item.code === code) ?? null;
+  }
+
   const loadModule = resultModuleLoaders[resultPath];
 
   if (!loadModule) {
@@ -76,7 +92,7 @@ export async function loadResultPreset(code) {
   const module = await loadModule();
   const preset = module.default.find((item) => item.code === code) ?? null;
 
-  if (preset) {
+  if (USE_RESULT_CACHE && preset) {
     resultCache.set(code, preset);
   }
 

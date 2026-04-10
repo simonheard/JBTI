@@ -32,6 +32,13 @@ import { calculateResult } from './utils/scoring.js';
 const QUESTIONS_PER_PAGE = 10;
 const IS_DEV = import.meta.env.DEV;
 
+function scrollToPageTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+}
+
 function GlassCard({ children, sx }) {
   return (
     <Paper
@@ -169,20 +176,25 @@ function HeroPage({ mode, setMode, onStart }) {
 }
 
 function QuestionCard({ question, index, value, onChange, mode }) {
+  const questionTypeLabel =
+    question.type === 'cross'
+      ? mode === 'conservative'
+        ? '交叉题'
+        : '多维题'
+      : mode === 'conservative'
+        ? '核心题'
+        : '单维题';
+
   return (
     <GlassCard>
       <Stack spacing={2.5}>
         <Stack direction="row" spacing={1.5} alignItems="center">
           <Chip label={`Q${index + 1}`} color="primary" />
-          <Typography variant="body2" color="text.secondary">
-            {question.type === 'cross'
-              ? mode === 'conservative'
-                ? '交叉题'
-                : '多维题'
-              : mode === 'conservative'
-                ? '核心题'
-                : '单维题'}
-          </Typography>
+          {IS_DEV && (
+            <Typography variant="body2" color="text.secondary">
+              {questionTypeLabel}
+            </Typography>
+          )}
         </Stack>
 
         <Typography variant="h5" sx={{ lineHeight: 1.6 }}>
@@ -285,7 +297,10 @@ function TestPage({
           <Button
             variant="outlined"
             disabled={page === 0}
-            onClick={() => setPage((current) => Math.max(0, current - 1))}
+            onClick={() => {
+              setPage((current) => Math.max(0, current - 1));
+              scrollToPageTop();
+            }}
           >
             {mode === 'conservative' ? '上一页' : '上一页'}
           </Button>
@@ -297,7 +312,10 @@ function TestPage({
           {page < totalPages - 1 ? (
             <Button
               variant="contained"
-              onClick={() => setPage((current) => Math.min(totalPages - 1, current + 1))}
+              onClick={() => {
+                setPage((current) => Math.min(totalPages - 1, current + 1));
+                scrollToPageTop();
+              }}
               disabled={!allCurrentAnswered}
             >
               {mode === 'conservative' ? '下一页' : '下一页'}
@@ -546,6 +564,7 @@ export default function App() {
 
                 setPage(0);
                 setStage(nextStage);
+                scrollToPageTop();
               }}
             />
 
@@ -565,6 +584,7 @@ export default function App() {
                     setOrderedQuestions(createQuestionOrder());
                     setStage('test');
                     setPage(0);
+                    scrollToPageTop();
                   }}
                 />
               )}
@@ -621,6 +641,7 @@ export default function App() {
                   setResultError(null);
                   setResultLoading(false);
                   setStage('home');
+                  scrollToPageTop();
                 }}
               />
             )}
