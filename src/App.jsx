@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import {
   Alert,
   Box,
@@ -33,10 +33,9 @@ const QUESTIONS_PER_PAGE = 10;
 const IS_DEV = import.meta.env.DEV;
 
 function scrollToPageTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
-  });
+  window.scrollTo(0, 0);
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
 }
 
 function GlassCard({ children, sx }) {
@@ -243,7 +242,7 @@ function TestPage({
   answers,
   setAnswers,
   page,
-  setPage,
+  onPageChange,
   onSubmit,
   orderedQuestions,
 }) {
@@ -306,8 +305,7 @@ function TestPage({
             variant="outlined"
             disabled={page === 0}
             onClick={() => {
-              setPage((current) => Math.max(0, current - 1));
-              scrollToPageTop();
+              onPageChange(Math.max(0, page - 1));
             }}
           >
             {mode === 'conservative' ? '上一页' : '上一页'}
@@ -321,8 +319,7 @@ function TestPage({
             <Button
               variant="contained"
               onClick={() => {
-                setPage((current) => Math.min(totalPages - 1, current + 1));
-                scrollToPageTop();
+                onPageChange(Math.min(totalPages - 1, page + 1));
               }}
               disabled={!allCurrentAnswered}
             >
@@ -511,8 +508,11 @@ export default function App() {
   const [resultPreset, setResultPreset] = useState(null);
   const [resultLoading, setResultLoading] = useState(false);
   const [resultError, setResultError] = useState(null);
+  const topAnchorRef = useRef(null);
+  const shouldScrollToTopRef = useRef(false);
 
   const result = useMemo(() => calculateResult(answers, mode), [answers, mode]);
+  const answeredCount = QUESTIONS.filter((question) => Object.hasOwn(answers, question.id)).length;
 
   function createDebugAnswers() {
     return Object.fromEntries(
@@ -528,6 +528,23 @@ export default function App() {
   useEffect(() => {
     document.title = `JBTI 人格测试系统 · ${MODES[mode].label}`;
   }, [mode]);
+
+  useLayoutEffect(() => {
+    if (!shouldScrollToTopRef.current) {
+      return;
+    }
+
+    shouldScrollToTopRef.current = false;
+
+    requestAnimationFrame(() => {
+      topAnchorRef.current?.scrollIntoView({
+        block: 'start',
+        inline: 'nearest',
+        behavior: 'auto',
+      });
+      scrollToPageTop();
+    });
+  }, [page, stage]);
 
   useEffect(() => {
     let cancelled = false;
@@ -576,6 +593,7 @@ export default function App() {
         }}
       >
         <Container maxWidth="lg">
+          <Box ref={topAnchorRef} sx={{ position: 'relative', top: -8 }} />
           <Stack spacing={3}>
             <DebugStageSwitcher
               stage={stage}
@@ -596,9 +614,9 @@ export default function App() {
                   setResultLoading(false);
                 }
 
+                shouldScrollToTopRef.current = true;
                 setPage(0);
                 setStage(nextStage);
-                scrollToPageTop();
               }}
             />
 
@@ -615,10 +633,10 @@ export default function App() {
                   mode={mode}
                   setMode={setMode}
                   onStart={() => {
+                    shouldScrollToTopRef.current = true;
                     setOrderedQuestions(createQuestionOrder());
                     setStage('test');
                     setPage(0);
-                    scrollToPageTop();
                   }}
                 />
               )}
@@ -649,9 +667,13 @@ export default function App() {
                 answers={answers}
                 setAnswers={setAnswers}
                 page={page}
-                setPage={setPage}
+                onPageChange={(nextPage) => {
+                  shouldScrollToTopRef.current = true;
+                  setPage(nextPage);
+                }}
                 orderedQuestions={orderedQuestions}
                 onSubmit={() => {
+                  shouldScrollToTopRef.current = true;
                   setResultPreset(null);
                   setResultError(null);
                   setStage('result');
@@ -668,6 +690,7 @@ export default function App() {
                 loading={resultLoading}
                 error={resultError}
                 onRestart={() => {
+                  shouldScrollToTopRef.current = true;
                   setAnswers({});
                   setPage(0);
                   setOrderedQuestions(createQuestionOrder());
@@ -675,7 +698,6 @@ export default function App() {
                   setResultError(null);
                   setResultLoading(false);
                   setStage('home');
-                  scrollToPageTop();
                 }}
               />
             )}
