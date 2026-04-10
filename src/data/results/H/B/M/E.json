@@ -1,0 +1,452 @@
+[
+  {
+    "code": "HBMEUO",
+    "name": {
+      "conservative": "【待命名】HBMEUO",
+      "direct": "【待命名】HBMEUO"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=高，性谱系开放度=高，性烈度开放度=低，精神肉体倾向=高，权力动态倾向=低，关系开放度=低。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度高、性谱系开放度高、性烈度开放度低、精神肉体倾向高、权力动态倾向低、关系开放度低。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/balanced-spectrum.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "high",
+        "letter": "H"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "high",
+        "letter": "B"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "low",
+        "letter": "M"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "high",
+        "letter": "E"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "low",
+        "letter": "U"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "low",
+        "letter": "O"
+      }
+    ]
+  },
+  {
+    "code": "HBMEUN",
+    "name": {
+      "conservative": "【待命名】HBMEUN",
+      "direct": "【待命名】HBMEUN"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=高，性谱系开放度=高，性烈度开放度=低，精神肉体倾向=高，权力动态倾向=低，关系开放度=中。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度高、性谱系开放度高、性烈度开放度低、精神肉体倾向高、权力动态倾向低、关系开放度中。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/balanced-spectrum.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "high",
+        "letter": "H"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "high",
+        "letter": "B"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "low",
+        "letter": "M"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "high",
+        "letter": "E"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "low",
+        "letter": "U"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "medium",
+        "letter": "N"
+      }
+    ]
+  },
+  {
+    "code": "HBMEUP",
+    "name": {
+      "conservative": "【待命名】HBMEUP",
+      "direct": "【待命名】HBMEUP"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=高，性谱系开放度=高，性烈度开放度=低，精神肉体倾向=高，权力动态倾向=低，关系开放度=高。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度高、性谱系开放度高、性烈度开放度低、精神肉体倾向高、权力动态倾向低、关系开放度高。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/surge-driver.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "high",
+        "letter": "H"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "high",
+        "letter": "B"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "low",
+        "letter": "M"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "high",
+        "letter": "E"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "low",
+        "letter": "U"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "high",
+        "letter": "P"
+      }
+    ]
+  },
+  {
+    "code": "HBMETO",
+    "name": {
+      "conservative": "【待命名】HBMETO",
+      "direct": "【待命名】HBMETO"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=高，性谱系开放度=高，性烈度开放度=低，精神肉体倾向=高，权力动态倾向=中，关系开放度=低。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度高、性谱系开放度高、性烈度开放度低、精神肉体倾向高、权力动态倾向中、关系开放度低。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/balanced-spectrum.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "high",
+        "letter": "H"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "high",
+        "letter": "B"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "low",
+        "letter": "M"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "high",
+        "letter": "E"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "medium",
+        "letter": "T"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "low",
+        "letter": "O"
+      }
+    ]
+  },
+  {
+    "code": "HBMETN",
+    "name": {
+      "conservative": "【待命名】HBMETN",
+      "direct": "【待命名】HBMETN"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=高，性谱系开放度=高，性烈度开放度=低，精神肉体倾向=高，权力动态倾向=中，关系开放度=中。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度高、性谱系开放度高、性烈度开放度低、精神肉体倾向高、权力动态倾向中、关系开放度中。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/balanced-spectrum.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "high",
+        "letter": "H"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "high",
+        "letter": "B"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "low",
+        "letter": "M"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "high",
+        "letter": "E"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "medium",
+        "letter": "T"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "medium",
+        "letter": "N"
+      }
+    ]
+  },
+  {
+    "code": "HBMETP",
+    "name": {
+      "conservative": "【待命名】HBMETP",
+      "direct": "【待命名】HBMETP"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=高，性谱系开放度=高，性烈度开放度=低，精神肉体倾向=高，权力动态倾向=中，关系开放度=高。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度高、性谱系开放度高、性烈度开放度低、精神肉体倾向高、权力动态倾向中、关系开放度高。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/surge-driver.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "high",
+        "letter": "H"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "high",
+        "letter": "B"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "low",
+        "letter": "M"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "high",
+        "letter": "E"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "medium",
+        "letter": "T"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "high",
+        "letter": "P"
+      }
+    ]
+  },
+  {
+    "code": "HBMEDO",
+    "name": {
+      "conservative": "【待命名】HBMEDO",
+      "direct": "【待命名】HBMEDO"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=高，性谱系开放度=高，性烈度开放度=低，精神肉体倾向=高，权力动态倾向=高，关系开放度=低。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度高、性谱系开放度高、性烈度开放度低、精神肉体倾向高、权力动态倾向高、关系开放度低。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/surge-driver.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "high",
+        "letter": "H"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "high",
+        "letter": "B"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "low",
+        "letter": "M"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "high",
+        "letter": "E"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "high",
+        "letter": "D"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "low",
+        "letter": "O"
+      }
+    ]
+  },
+  {
+    "code": "HBMEDN",
+    "name": {
+      "conservative": "【待命名】HBMEDN",
+      "direct": "【待命名】HBMEDN"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=高，性谱系开放度=高，性烈度开放度=低，精神肉体倾向=高，权力动态倾向=高，关系开放度=中。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度高、性谱系开放度高、性烈度开放度低、精神肉体倾向高、权力动态倾向高、关系开放度中。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/surge-driver.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "high",
+        "letter": "H"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "high",
+        "letter": "B"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "low",
+        "letter": "M"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "high",
+        "letter": "E"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "high",
+        "letter": "D"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "medium",
+        "letter": "N"
+      }
+    ]
+  },
+  {
+    "code": "HBMEDP",
+    "name": {
+      "conservative": "【待命名】HBMEDP",
+      "direct": "【待命名】HBMEDP"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=高，性谱系开放度=高，性烈度开放度=低，精神肉体倾向=高，权力动态倾向=高，关系开放度=高。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度高、性谱系开放度高、性烈度开放度低、精神肉体倾向高、权力动态倾向高、关系开放度高。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/surge-driver.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "high",
+        "letter": "H"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "high",
+        "letter": "B"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "low",
+        "letter": "M"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "high",
+        "letter": "E"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "high",
+        "letter": "D"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "high",
+        "letter": "P"
+      }
+    ]
+  }
+]

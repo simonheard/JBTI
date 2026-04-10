@@ -1,6 +1,6 @@
 import config from './jbti-config.json' with { type: 'json' };
 import dimensions from './jbti-dimensions.json' with { type: 'json' };
-import questions from './jbti-questions.json' with { type: 'json' };
+import questionManifest from './questions/manifest.json' with { type: 'json' };
 
 export const MODES = config.modes;
 export const UI_COPY = config.ui;
@@ -8,7 +8,22 @@ export const DIMENSIONS = dimensions;
 export const LIKERT_OPTIONS = config.likertOptions;
 export const DISCLAIMER = config.disclaimer;
 
-export const QUESTIONS = questions.map((question) => ({
+const questionModules = import.meta.glob('./questions/**/*.json', {
+  eager: true,
+  import: 'default',
+});
+
+const orderedQuestionFiles = [
+  ...questionManifest.self.map((item) => item.file),
+  ...questionManifest.cross.map((item) => item.file),
+];
+
+const questionLists = orderedQuestionFiles.map((relativePath) => {
+  const modulePath = `./questions/${relativePath.replace('./', '')}`;
+  return questionModules[modulePath] ?? [];
+});
+
+export const QUESTIONS = questionLists.flat().map((question) => ({
   ...question,
   conservative: question.prompt.conservative,
   direct: question.prompt.direct,
@@ -35,9 +50,9 @@ export function createQuestionOrder() {
 }
 
 const resultModuleLoaders = {
-  a: () => import('./jbti-results-a.json', { with: { type: 'json' } }),
-  b: () => import('./jbti-results-b.json', { with: { type: 'json' } }),
-  c: () => import('./jbti-results-c.json', { with: { type: 'json' } }),
+  ...import.meta.glob('./results/*/*/*/*.json', {
+    import: 'default',
+  }),
 };
 
 const resultCache = new Map();
@@ -51,11 +66,11 @@ export async function loadResultPreset(code) {
     return resultCache.get(code);
   }
 
-  const bucket = code[0]?.toLowerCase();
-  const loadModule = resultModuleLoaders[bucket];
+  const resultPath = `./results/${code[0]}/${code[1]}/${code[2]}/${code[3]}.json`;
+  const loadModule = resultModuleLoaders[resultPath];
 
   if (!loadModule) {
-    throw new Error(`No result bucket configured for code "${code}"`);
+    throw new Error(`No result file configured for code "${code}"`);
   }
 
   const module = await loadModule();

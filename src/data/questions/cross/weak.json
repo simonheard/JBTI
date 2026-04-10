@@ -1,0 +1,234 @@
+[
+  {
+    "id": "cross-10",
+    "type": "cross",
+    "pairType": "weak",
+    "dimensions": [
+      "mind_body_orientation",
+      "relationship_openness"
+    ],
+    "prompt": {
+      "conservative": "【待填写】弱关联交叉题 2：围绕「精神肉体倾向 × 关系开放度」的场景题。",
+      "direct": "【待填写】弱关联交叉题 2：精神/肉体倾向 × 关系开放度。"
+    },
+    "authoringNote": "弱关联交叉题：精神肉体倾向 × 关系开放度。该题用于补齐共享结构，可按需要替换为更合适的弱关联组合。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
+    "effectsByValue": {
+      "1": {
+        "mind_body_orientation": 0,
+        "relationship_openness": 0
+      },
+      "2": {
+        "mind_body_orientation": 0.63,
+        "relationship_openness": 0.63
+      },
+      "3": {
+        "mind_body_orientation": 1.25,
+        "relationship_openness": 1.25
+      },
+      "4": {
+        "mind_body_orientation": 1.88,
+        "relationship_openness": 1.88
+      },
+      "5": {
+        "mind_body_orientation": 2.5,
+        "relationship_openness": 2.5
+      }
+    }
+  },
+  {
+    "id": "cross-11",
+    "type": "cross",
+    "pairType": "weak",
+    "dimensions": [
+      "power_dynamic_tendency",
+      "relationship_openness"
+    ],
+    "prompt": {
+      "conservative": "【待填写】弱关联交叉题 3：围绕「权力动态倾向 × 关系开放度」的场景题。",
+      "direct": "【待填写】弱关联交叉题 3：权力动态倾向 × 关系开放度。"
+    },
+    "authoringNote": "弱关联交叉题：权力动态倾向 × 关系开放度。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
+    "effectsByValue": {
+      "1": {
+        "power_dynamic_tendency": 0,
+        "relationship_openness": 0
+      },
+      "2": {
+        "power_dynamic_tendency": 0.63,
+        "relationship_openness": 0.63
+      },
+      "3": {
+        "power_dynamic_tendency": 1.25,
+        "relationship_openness": 1.25
+      },
+      "4": {
+        "power_dynamic_tendency": 1.88,
+        "relationship_openness": 1.88
+      },
+      "5": {
+        "power_dynamic_tendency": 2.5,
+        "relationship_openness": 2.5
+      }
+    }
+  },
+  {
+    "id": "cross-12",
+    "type": "cross",
+    "pairType": "weak",
+    "dimensions": [
+      "sexual_spectrum_openness",
+      "mind_body_orientation"
+    ],
+    "prompt": {
+      "conservative": "【待填写】弱关联交叉题 4：围绕「性谱系开放度 × 精神肉体倾向」的场景题。",
+      "direct": "【待填写】弱关联交叉题 4：谱系开放度 × 精神/肉体倾向。"
+    },
+    "authoringNote": "弱关联交叉题：性谱系开放度 × 精神肉体倾向。该题用于补齐共享结构，可按需要替换为更合适的弱关联组合。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
+    "effectsByValue": {
+      "1": {
+        "sexual_spectrum_openness": 0,
+        "mind_body_orientation": 0
+      },
+      "2": {
+        "sexual_spectrum_openness": 0.63,
+        "mind_body_orientation": 0.63
+      },
+      "3": {
+        "sexual_spectrum_openness": 1.25,
+        "mind_body_orientation": 1.25
+      },
+      "4": {
+        "sexual_spectrum_openness": 1.88,
+        "mind_body_orientation": 1.88
+      },
+      "5": {
+        "sexual_spectrum_openness": 2.5,
+        "mind_body_orientation": 2.5
+      }
+    }
+  },
+  {
+    "id": "cross-9",
+    "type": "cross",
+    "pairType": "weak",
+    "dimensions": [
+      "sexual_spectrum_openness",
+      "power_dynamic_tendency"
+    ],
+    "prompt": {
+      "conservative": "【待填写】弱关联交叉题 1：围绕「性谱系开放度 × 权力动态倾向」的场景题。",
+      "direct": "【待填写】弱关联交叉题 1：谱系开放度 × 权力动态倾向。"
+    },
+    "authoringNote": "弱关联交叉题：性谱系开放度 × 权力动态倾向。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
+    "effectsByValue": {
+      "1": {
+        "sexual_spectrum_openness": 0,
+        "power_dynamic_tendency": 0
+      },
+      "2": {
+        "sexual_spectrum_openness": 0.63,
+        "power_dynamic_tendency": 0.63
+      },
+      "3": {
+        "sexual_spectrum_openness": 1.25,
+        "power_dynamic_tendency": 1.25
+      },
+      "4": {
+        "sexual_spectrum_openness": 1.88,
+        "power_dynamic_tendency": 1.88
+      },
+      "5": {
+        "sexual_spectrum_openness": 2.5,
+        "power_dynamic_tendency": 2.5
+      }
+    }
+  }
+]

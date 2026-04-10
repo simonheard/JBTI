@@ -1,0 +1,452 @@
+[
+  {
+    "code": "VBREUO",
+    "name": {
+      "conservative": "【待命名】VBREUO",
+      "direct": "【待命名】VBREUO"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=中，性谱系开放度=高，性烈度开放度=高，精神肉体倾向=高，权力动态倾向=低，关系开放度=低。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度中、性谱系开放度高、性烈度开放度高、精神肉体倾向高、权力动态倾向低、关系开放度低。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/balanced-spectrum.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "medium",
+        "letter": "V"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "high",
+        "letter": "B"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "high",
+        "letter": "R"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "high",
+        "letter": "E"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "low",
+        "letter": "U"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "low",
+        "letter": "O"
+      }
+    ]
+  },
+  {
+    "code": "VBREUN",
+    "name": {
+      "conservative": "【待命名】VBREUN",
+      "direct": "【待命名】VBREUN"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=中，性谱系开放度=高，性烈度开放度=高，精神肉体倾向=高，权力动态倾向=低，关系开放度=中。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度中、性谱系开放度高、性烈度开放度高、精神肉体倾向高、权力动态倾向低、关系开放度中。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/balanced-spectrum.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "medium",
+        "letter": "V"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "high",
+        "letter": "B"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "high",
+        "letter": "R"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "high",
+        "letter": "E"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "low",
+        "letter": "U"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "medium",
+        "letter": "N"
+      }
+    ]
+  },
+  {
+    "code": "VBREUP",
+    "name": {
+      "conservative": "【待命名】VBREUP",
+      "direct": "【待命名】VBREUP"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=中，性谱系开放度=高，性烈度开放度=高，精神肉体倾向=高，权力动态倾向=低，关系开放度=高。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度中、性谱系开放度高、性烈度开放度高、精神肉体倾向高、权力动态倾向低、关系开放度高。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/surge-driver.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "medium",
+        "letter": "V"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "high",
+        "letter": "B"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "high",
+        "letter": "R"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "high",
+        "letter": "E"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "low",
+        "letter": "U"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "high",
+        "letter": "P"
+      }
+    ]
+  },
+  {
+    "code": "VBRETO",
+    "name": {
+      "conservative": "【待命名】VBRETO",
+      "direct": "【待命名】VBRETO"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=中，性谱系开放度=高，性烈度开放度=高，精神肉体倾向=高，权力动态倾向=中，关系开放度=低。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度中、性谱系开放度高、性烈度开放度高、精神肉体倾向高、权力动态倾向中、关系开放度低。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/balanced-spectrum.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "medium",
+        "letter": "V"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "high",
+        "letter": "B"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "high",
+        "letter": "R"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "high",
+        "letter": "E"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "medium",
+        "letter": "T"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "low",
+        "letter": "O"
+      }
+    ]
+  },
+  {
+    "code": "VBRETN",
+    "name": {
+      "conservative": "【待命名】VBRETN",
+      "direct": "【待命名】VBRETN"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=中，性谱系开放度=高，性烈度开放度=高，精神肉体倾向=高，权力动态倾向=中，关系开放度=中。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度中、性谱系开放度高、性烈度开放度高、精神肉体倾向高、权力动态倾向中、关系开放度中。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/balanced-spectrum.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "medium",
+        "letter": "V"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "high",
+        "letter": "B"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "high",
+        "letter": "R"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "high",
+        "letter": "E"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "medium",
+        "letter": "T"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "medium",
+        "letter": "N"
+      }
+    ]
+  },
+  {
+    "code": "VBRETP",
+    "name": {
+      "conservative": "【待命名】VBRETP",
+      "direct": "【待命名】VBRETP"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=中，性谱系开放度=高，性烈度开放度=高，精神肉体倾向=高，权力动态倾向=中，关系开放度=高。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度中、性谱系开放度高、性烈度开放度高、精神肉体倾向高、权力动态倾向中、关系开放度高。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/surge-driver.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "medium",
+        "letter": "V"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "high",
+        "letter": "B"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "high",
+        "letter": "R"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "high",
+        "letter": "E"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "medium",
+        "letter": "T"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "high",
+        "letter": "P"
+      }
+    ]
+  },
+  {
+    "code": "VBREDO",
+    "name": {
+      "conservative": "【待命名】VBREDO",
+      "direct": "【待命名】VBREDO"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=中，性谱系开放度=高，性烈度开放度=高，精神肉体倾向=高，权力动态倾向=高，关系开放度=低。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度中、性谱系开放度高、性烈度开放度高、精神肉体倾向高、权力动态倾向高、关系开放度低。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/surge-driver.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "medium",
+        "letter": "V"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "high",
+        "letter": "B"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "high",
+        "letter": "R"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "high",
+        "letter": "E"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "high",
+        "letter": "D"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "low",
+        "letter": "O"
+      }
+    ]
+  },
+  {
+    "code": "VBREDN",
+    "name": {
+      "conservative": "【待命名】VBREDN",
+      "direct": "【待命名】VBREDN"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=中，性谱系开放度=高，性烈度开放度=高，精神肉体倾向=高，权力动态倾向=高，关系开放度=中。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度中、性谱系开放度高、性烈度开放度高、精神肉体倾向高、权力动态倾向高、关系开放度中。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/surge-driver.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "medium",
+        "letter": "V"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "high",
+        "letter": "B"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "high",
+        "letter": "R"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "high",
+        "letter": "E"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "high",
+        "letter": "D"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "medium",
+        "letter": "N"
+      }
+    ]
+  },
+  {
+    "code": "VBREDP",
+    "name": {
+      "conservative": "【待命名】VBREDP",
+      "direct": "【待命名】VBREDP"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=中，性谱系开放度=高，性烈度开放度=高，精神肉体倾向=高，权力动态倾向=高，关系开放度=高。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度中、性谱系开放度高、性烈度开放度高、精神肉体倾向高、权力动态倾向高、关系开放度高。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/surge-driver.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "medium",
+        "letter": "V"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "high",
+        "letter": "B"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "high",
+        "letter": "R"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "high",
+        "letter": "E"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "high",
+        "letter": "D"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "high",
+        "letter": "P"
+      }
+    ]
+  }
+]

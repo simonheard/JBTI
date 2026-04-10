@@ -1,0 +1,452 @@
+[
+  {
+    "code": "HCWXUO",
+    "name": {
+      "conservative": "【待命名】HCWXUO",
+      "direct": "【待命名】HCWXUO"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=高，性谱系开放度=中，性烈度开放度=中，精神肉体倾向=中，权力动态倾向=低，关系开放度=低。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度高、性谱系开放度中、性烈度开放度中、精神肉体倾向中、权力动态倾向低、关系开放度低。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/balanced-spectrum.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "high",
+        "letter": "H"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "medium",
+        "letter": "C"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "medium",
+        "letter": "W"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "medium",
+        "letter": "X"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "low",
+        "letter": "U"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "low",
+        "letter": "O"
+      }
+    ]
+  },
+  {
+    "code": "HCWXUN",
+    "name": {
+      "conservative": "【待命名】HCWXUN",
+      "direct": "【待命名】HCWXUN"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=高，性谱系开放度=中，性烈度开放度=中，精神肉体倾向=中，权力动态倾向=低，关系开放度=中。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度高、性谱系开放度中、性烈度开放度中、精神肉体倾向中、权力动态倾向低、关系开放度中。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/balanced-spectrum.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "high",
+        "letter": "H"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "medium",
+        "letter": "C"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "medium",
+        "letter": "W"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "medium",
+        "letter": "X"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "low",
+        "letter": "U"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "medium",
+        "letter": "N"
+      }
+    ]
+  },
+  {
+    "code": "HCWXUP",
+    "name": {
+      "conservative": "【待命名】HCWXUP",
+      "direct": "【待命名】HCWXUP"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=高，性谱系开放度=中，性烈度开放度=中，精神肉体倾向=中，权力动态倾向=低，关系开放度=高。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度高、性谱系开放度中、性烈度开放度中、精神肉体倾向中、权力动态倾向低、关系开放度高。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/balanced-spectrum.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "high",
+        "letter": "H"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "medium",
+        "letter": "C"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "medium",
+        "letter": "W"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "medium",
+        "letter": "X"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "low",
+        "letter": "U"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "high",
+        "letter": "P"
+      }
+    ]
+  },
+  {
+    "code": "HCWXTO",
+    "name": {
+      "conservative": "【待命名】HCWXTO",
+      "direct": "【待命名】HCWXTO"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=高，性谱系开放度=中，性烈度开放度=中，精神肉体倾向=中，权力动态倾向=中，关系开放度=低。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度高、性谱系开放度中、性烈度开放度中、精神肉体倾向中、权力动态倾向中、关系开放度低。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/balanced-spectrum.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "high",
+        "letter": "H"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "medium",
+        "letter": "C"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "medium",
+        "letter": "W"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "medium",
+        "letter": "X"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "medium",
+        "letter": "T"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "low",
+        "letter": "O"
+      }
+    ]
+  },
+  {
+    "code": "HCWXTN",
+    "name": {
+      "conservative": "【待命名】HCWXTN",
+      "direct": "【待命名】HCWXTN"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=高，性谱系开放度=中，性烈度开放度=中，精神肉体倾向=中，权力动态倾向=中，关系开放度=中。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度高、性谱系开放度中、性烈度开放度中、精神肉体倾向中、权力动态倾向中、关系开放度中。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/balanced-spectrum.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "high",
+        "letter": "H"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "medium",
+        "letter": "C"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "medium",
+        "letter": "W"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "medium",
+        "letter": "X"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "medium",
+        "letter": "T"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "medium",
+        "letter": "N"
+      }
+    ]
+  },
+  {
+    "code": "HCWXTP",
+    "name": {
+      "conservative": "【待命名】HCWXTP",
+      "direct": "【待命名】HCWXTP"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=高，性谱系开放度=中，性烈度开放度=中，精神肉体倾向=中，权力动态倾向=中，关系开放度=高。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度高、性谱系开放度中、性烈度开放度中、精神肉体倾向中、权力动态倾向中、关系开放度高。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/balanced-spectrum.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "high",
+        "letter": "H"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "medium",
+        "letter": "C"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "medium",
+        "letter": "W"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "medium",
+        "letter": "X"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "medium",
+        "letter": "T"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "high",
+        "letter": "P"
+      }
+    ]
+  },
+  {
+    "code": "HCWXDO",
+    "name": {
+      "conservative": "【待命名】HCWXDO",
+      "direct": "【待命名】HCWXDO"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=高，性谱系开放度=中，性烈度开放度=中，精神肉体倾向=中，权力动态倾向=高，关系开放度=低。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度高、性谱系开放度中、性烈度开放度中、精神肉体倾向中、权力动态倾向高、关系开放度低。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/balanced-spectrum.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "high",
+        "letter": "H"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "medium",
+        "letter": "C"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "medium",
+        "letter": "W"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "medium",
+        "letter": "X"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "high",
+        "letter": "D"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "low",
+        "letter": "O"
+      }
+    ]
+  },
+  {
+    "code": "HCWXDN",
+    "name": {
+      "conservative": "【待命名】HCWXDN",
+      "direct": "【待命名】HCWXDN"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=高，性谱系开放度=中，性烈度开放度=中，精神肉体倾向=中，权力动态倾向=高，关系开放度=中。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度高、性谱系开放度中、性烈度开放度中、精神肉体倾向中、权力动态倾向高、关系开放度中。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/balanced-spectrum.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "high",
+        "letter": "H"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "medium",
+        "letter": "C"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "medium",
+        "letter": "W"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "medium",
+        "letter": "X"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "high",
+        "letter": "D"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "medium",
+        "letter": "N"
+      }
+    ]
+  },
+  {
+    "code": "HCWXDP",
+    "name": {
+      "conservative": "【待命名】HCWXDP",
+      "direct": "【待命名】HCWXDP"
+    },
+    "summary": {
+      "conservative": "当前组合：性欲强度=高，性谱系开放度=中，性烈度开放度=中，精神肉体倾向=中，权力动态倾向=高，关系开放度=高。这是一条自动生成的占位总结，后续可按需要手动改写。",
+      "direct": "这组代码里：性欲强度高、性谱系开放度中、性烈度开放度中、精神肉体倾向中、权力动态倾向高、关系开放度高。这里先放占位总结，后面可以直接手改。"
+    },
+    "illustrationUrl": "/illustrations/balanced-spectrum.svg",
+    "profile": [
+      {
+        "dimensionId": "sexual_desire_intensity",
+        "dimensionName": "性欲强度",
+        "level": "high",
+        "letter": "H"
+      },
+      {
+        "dimensionId": "sexual_spectrum_openness",
+        "dimensionName": "性谱系开放度",
+        "level": "medium",
+        "letter": "C"
+      },
+      {
+        "dimensionId": "intensity_openness",
+        "dimensionName": "性烈度开放度",
+        "level": "medium",
+        "letter": "W"
+      },
+      {
+        "dimensionId": "mind_body_orientation",
+        "dimensionName": "精神肉体倾向",
+        "level": "medium",
+        "letter": "X"
+      },
+      {
+        "dimensionId": "power_dynamic_tendency",
+        "dimensionName": "权力动态倾向",
+        "level": "high",
+        "letter": "D"
+      },
+      {
+        "dimensionId": "relationship_openness",
+        "dimensionName": "关系开放度",
+        "level": "high",
+        "letter": "P"
+      }
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "authoringNote": "结果按代码前四位拆分，每个文件仅包含相同前四位的 9 种代码组合。",
+  "prefixLength": 4,
+  "totalFiles": 81,
+  "totalResults": 729
+}

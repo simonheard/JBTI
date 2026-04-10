@@ -1,0 +1,234 @@
+[
+  {
+    "id": "cross-1",
+    "type": "cross",
+    "pairType": "strong",
+    "dimensions": [
+      "sexual_desire_intensity",
+      "intensity_openness"
+    ],
+    "prompt": {
+      "conservative": "【待填写】强关联交叉题 1：围绕「性欲强度 × 性烈度开放度」的场景题。",
+      "direct": "【待填写】强关联交叉题 1：欲望强度 × 烈度开放度。"
+    },
+    "authoringNote": "强关联交叉题 1：性欲强度 × 性烈度开放度。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
+    "effectsByValue": {
+      "1": {
+        "sexual_desire_intensity": 0,
+        "intensity_openness": 0
+      },
+      "2": {
+        "sexual_desire_intensity": 0.63,
+        "intensity_openness": 0.63
+      },
+      "3": {
+        "sexual_desire_intensity": 1.25,
+        "intensity_openness": 1.25
+      },
+      "4": {
+        "sexual_desire_intensity": 1.88,
+        "intensity_openness": 1.88
+      },
+      "5": {
+        "sexual_desire_intensity": 2.5,
+        "intensity_openness": 2.5
+      }
+    }
+  },
+  {
+    "id": "cross-2",
+    "type": "cross",
+    "pairType": "strong",
+    "dimensions": [
+      "sexual_desire_intensity",
+      "intensity_openness"
+    ],
+    "prompt": {
+      "conservative": "【待填写】强关联交叉题 2：围绕「性欲强度 × 性烈度开放度」的场景题。",
+      "direct": "【待填写】强关联交叉题 2：欲望强度 × 烈度开放度。"
+    },
+    "authoringNote": "强关联交叉题 2：性欲强度 × 性烈度开放度。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
+    "effectsByValue": {
+      "1": {
+        "sexual_desire_intensity": 0,
+        "intensity_openness": 0
+      },
+      "2": {
+        "sexual_desire_intensity": 0.63,
+        "intensity_openness": 0.63
+      },
+      "3": {
+        "sexual_desire_intensity": 1.25,
+        "intensity_openness": 1.25
+      },
+      "4": {
+        "sexual_desire_intensity": 1.88,
+        "intensity_openness": 1.88
+      },
+      "5": {
+        "sexual_desire_intensity": 2.5,
+        "intensity_openness": 2.5
+      }
+    }
+  },
+  {
+    "id": "cross-3",
+    "type": "cross",
+    "pairType": "strong",
+    "dimensions": [
+      "sexual_spectrum_openness",
+      "relationship_openness"
+    ],
+    "prompt": {
+      "conservative": "【待填写】强关联交叉题 3：围绕「性谱系开放度 × 关系开放度」的场景题。",
+      "direct": "【待填写】强关联交叉题 3：谱系开放度 × 关系开放度。"
+    },
+    "authoringNote": "强关联交叉题 1：性谱系开放度 × 关系开放度。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
+    "effectsByValue": {
+      "1": {
+        "sexual_spectrum_openness": 0,
+        "relationship_openness": 0
+      },
+      "2": {
+        "sexual_spectrum_openness": 0.63,
+        "relationship_openness": 0.63
+      },
+      "3": {
+        "sexual_spectrum_openness": 1.25,
+        "relationship_openness": 1.25
+      },
+      "4": {
+        "sexual_spectrum_openness": 1.88,
+        "relationship_openness": 1.88
+      },
+      "5": {
+        "sexual_spectrum_openness": 2.5,
+        "relationship_openness": 2.5
+      }
+    }
+  },
+  {
+    "id": "cross-4",
+    "type": "cross",
+    "pairType": "strong",
+    "dimensions": [
+      "sexual_spectrum_openness",
+      "relationship_openness"
+    ],
+    "prompt": {
+      "conservative": "【待填写】强关联交叉题 4：围绕「性谱系开放度 × 关系开放度」的场景题。",
+      "direct": "【待填写】强关联交叉题 4：谱系开放度 × 关系开放度。"
+    },
+    "authoringNote": "强关联交叉题 2：性谱系开放度 × 关系开放度。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
+    "effectsByValue": {
+      "1": {
+        "sexual_spectrum_openness": 0,
+        "relationship_openness": 0
+      },
+      "2": {
+        "sexual_spectrum_openness": 0.63,
+        "relationship_openness": 0.63
+      },
+      "3": {
+        "sexual_spectrum_openness": 1.25,
+        "relationship_openness": 1.25
+      },
+      "4": {
+        "sexual_spectrum_openness": 1.88,
+        "relationship_openness": 1.88
+      },
+      "5": {
+        "sexual_spectrum_openness": 2.5,
+        "relationship_openness": 2.5
+      }
+    }
+  }
+]

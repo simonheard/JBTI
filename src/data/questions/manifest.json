@@ -1,0 +1,52 @@
+{
+  "authoringNote": "题库已拆分为多个小文件；新增或移动题目时，记得同步更新此 manifest，或直接重新运行生成脚本。",
+  "self": [
+    {
+      "dimensionId": "sexual_desire_intensity",
+      "file": "./self/sexual_desire_intensity.json",
+      "count": 4
+    },
+    {
+      "dimensionId": "sexual_spectrum_openness",
+      "file": "./self/sexual_spectrum_openness.json",
+      "count": 4
+    },
+    {
+      "dimensionId": "intensity_openness",
+      "file": "./self/intensity_openness.json",
+      "count": 4
+    },
+    {
+      "dimensionId": "mind_body_orientation",
+      "file": "./self/mind_body_orientation.json",
+      "count": 4
+    },
+    {
+      "dimensionId": "power_dynamic_tendency",
+      "file": "./self/power_dynamic_tendency.json",
+      "count": 4
+    },
+    {
+      "dimensionId": "relationship_openness",
+      "file": "./self/relationship_openness.json",
+      "count": 4
+    }
+  ],
+  "cross": [
+    {
+      "group": "strong-1",
+      "file": "./cross/strong-a.json",
+      "count": 4
+    },
+    {
+      "group": "strong-2",
+      "file": "./cross/strong-b.json",
+      "count": 4
+    },
+    {
+      "group": "weak",
+      "file": "./cross/weak.json",
+      "count": 4
+    }
+  ]
+}

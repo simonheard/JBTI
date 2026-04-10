@@ -1,0 +1,234 @@
+[
+  {
+    "id": "cross-5",
+    "type": "cross",
+    "pairType": "strong",
+    "dimensions": [
+      "intensity_openness",
+      "power_dynamic_tendency"
+    ],
+    "prompt": {
+      "conservative": "【待填写】强关联交叉题 5：围绕「性烈度开放度 × 权力动态倾向」的场景题。",
+      "direct": "【待填写】强关联交叉题 5：烈度开放度 × 权力动态倾向。"
+    },
+    "authoringNote": "强关联交叉题 1：性烈度开放度 × 权力动态倾向。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
+    "effectsByValue": {
+      "1": {
+        "intensity_openness": 0,
+        "power_dynamic_tendency": 0
+      },
+      "2": {
+        "intensity_openness": 0.63,
+        "power_dynamic_tendency": 0.63
+      },
+      "3": {
+        "intensity_openness": 1.25,
+        "power_dynamic_tendency": 1.25
+      },
+      "4": {
+        "intensity_openness": 1.88,
+        "power_dynamic_tendency": 1.88
+      },
+      "5": {
+        "intensity_openness": 2.5,
+        "power_dynamic_tendency": 2.5
+      }
+    }
+  },
+  {
+    "id": "cross-6",
+    "type": "cross",
+    "pairType": "strong",
+    "dimensions": [
+      "intensity_openness",
+      "power_dynamic_tendency"
+    ],
+    "prompt": {
+      "conservative": "【待填写】强关联交叉题 6：围绕「性烈度开放度 × 权力动态倾向」的场景题。",
+      "direct": "【待填写】强关联交叉题 6：烈度开放度 × 权力动态倾向。"
+    },
+    "authoringNote": "强关联交叉题 2：性烈度开放度 × 权力动态倾向。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
+    "effectsByValue": {
+      "1": {
+        "intensity_openness": 0,
+        "power_dynamic_tendency": 0
+      },
+      "2": {
+        "intensity_openness": 0.63,
+        "power_dynamic_tendency": 0.63
+      },
+      "3": {
+        "intensity_openness": 1.25,
+        "power_dynamic_tendency": 1.25
+      },
+      "4": {
+        "intensity_openness": 1.88,
+        "power_dynamic_tendency": 1.88
+      },
+      "5": {
+        "intensity_openness": 2.5,
+        "power_dynamic_tendency": 2.5
+      }
+    }
+  },
+  {
+    "id": "cross-7",
+    "type": "cross",
+    "pairType": "strong",
+    "dimensions": [
+      "sexual_desire_intensity",
+      "mind_body_orientation"
+    ],
+    "prompt": {
+      "conservative": "【待填写】强关联交叉题 7：围绕「性欲强度 × 精神肉体倾向」的场景题。",
+      "direct": "【待填写】强关联交叉题 7：欲望强度 × 精神/肉体倾向。"
+    },
+    "authoringNote": "强关联交叉题 1：性欲强度 × 精神肉体倾向。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
+    "effectsByValue": {
+      "1": {
+        "sexual_desire_intensity": 0,
+        "mind_body_orientation": 0
+      },
+      "2": {
+        "sexual_desire_intensity": 0.63,
+        "mind_body_orientation": 0.63
+      },
+      "3": {
+        "sexual_desire_intensity": 1.25,
+        "mind_body_orientation": 1.25
+      },
+      "4": {
+        "sexual_desire_intensity": 1.88,
+        "mind_body_orientation": 1.88
+      },
+      "5": {
+        "sexual_desire_intensity": 2.5,
+        "mind_body_orientation": 2.5
+      }
+    }
+  },
+  {
+    "id": "cross-8",
+    "type": "cross",
+    "pairType": "strong",
+    "dimensions": [
+      "sexual_desire_intensity",
+      "mind_body_orientation"
+    ],
+    "prompt": {
+      "conservative": "【待填写】强关联交叉题 8：围绕「性欲强度 × 精神肉体倾向」的场景题。",
+      "direct": "【待填写】强关联交叉题 8：欲望强度 × 精神/肉体倾向。"
+    },
+    "authoringNote": "强关联交叉题 2：性欲强度 × 精神肉体倾向。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
+    "effectsByValue": {
+      "1": {
+        "sexual_desire_intensity": 0,
+        "mind_body_orientation": 0
+      },
+      "2": {
+        "sexual_desire_intensity": 0.63,
+        "mind_body_orientation": 0.63
+      },
+      "3": {
+        "sexual_desire_intensity": 1.25,
+        "mind_body_orientation": 1.25
+      },
+      "4": {
+        "sexual_desire_intensity": 1.88,
+        "mind_body_orientation": 1.88
+      },
+      "5": {
+        "sexual_desire_intensity": 2.5,
+        "mind_body_orientation": 2.5
+      }
+    }
+  }
+]

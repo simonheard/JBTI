@@ -1,15 +1,12 @@
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import dimensions from '../src/data/jbti-dimensions.json' with { type: 'json' };
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const dataDir = path.resolve(__dirname, '../src/data');
-
-const scoreRanges = {
-  low: [0, 39],
-  medium: [40, 69],
-  high: [70, 100],
-};
+const questionsDir = path.join(dataDir, 'questions');
+const resultsDir = path.join(dataDir, 'results');
 
 const levelLabelMap = {
   low: { conservative: '低', direct: '低' },
@@ -40,192 +37,9 @@ const defaultOptionLabels = {
   },
 };
 
-const dimensions = [
-  {
-    id: 'sexual_desire_intensity',
-    order: 1,
-    name: {
-      conservative: '性欲强度',
-      direct: '欲望强度',
-    },
-    codeLevels: { low: 'A', medium: 'B', high: 'C' },
-    scoreRanges,
-    crossPlan: {
-      selfQuestions: 4,
-      strong: { dimensionId: 'intensity_openness', count: 2 },
-      weak: [
-        { dimensionId: 'mind_body_orientation', count: 1 },
-        { dimensionId: 'power_dynamic_tendency', count: 1 },
-      ],
-    },
-    descriptions: {
-      conservative: {
-        low: '你对性冲动与主动欲求的体验相对克制，更容易受情境、安全感与整体状态影响。',
-        medium: '你在欲望驱动与现实节奏之间较为平衡，既不会长期压低，也不会持续拉满。',
-        high: '你对欲望信号的感知和驱动力通常更强，相关需求更容易进入你的注意中心。',
-      },
-      direct: {
-        low: '你的欲望驱动偏低，不太会长期被性冲动牵着走。',
-        medium: '你的欲望强度比较居中，看状态、看关系、看场合。',
-        high: '你的欲望驱动明显偏高，相关需求更容易顶到前排。',
-      },
-    },
-  },
-  {
-    id: 'sexual_spectrum_openness',
-    order: 2,
-    name: {
-      conservative: '性谱系开放度',
-      direct: '谱系开放度',
-    },
-    codeLevels: { low: 'D', medium: 'E', high: 'F' },
-    scoreRanges,
-    crossPlan: {
-      selfQuestions: 4,
-      strong: { dimensionId: 'relationship_openness', count: 2 },
-      weak: [
-        { dimensionId: 'intensity_openness', count: 1 },
-        { dimensionId: 'power_dynamic_tendency', count: 1 },
-      ],
-    },
-    descriptions: {
-      conservative: {
-        low: '你对性相关光谱、边界与尝试范围的接受度较谨慎，更偏向清晰、熟悉与可预期。',
-        medium: '你对不同性表达和体验方式持相对开放但有筛选的态度，会看安全感与具体契合度。',
-        high: '你对性相关光谱和可能性更开放，通常更能接受多样化的设定、表达和体验范围。',
-      },
-      direct: {
-        low: '你的性谱系开放度偏低，不太想碰太陌生或太跳脱的设定。',
-        medium: '你可以接受一些变化，但会先判断适不适合自己。',
-        high: '你的开放度偏高，对不同玩法、表达和边界形式更容易保持开放。',
-      },
-    },
-  },
-  {
-    id: 'intensity_openness',
-    order: 3,
-    name: {
-      conservative: '性烈度开放度',
-      direct: '烈度开放度',
-    },
-    codeLevels: { low: 'G', medium: 'H', high: 'I' },
-    scoreRanges,
-    crossPlan: {
-      selfQuestions: 4,
-      strong: { dimensionId: 'sexual_desire_intensity', count: 2 },
-      weak: [
-        { dimensionId: 'power_dynamic_tendency', count: 1 },
-        { dimensionId: 'mind_body_orientation', count: 1 },
-      ],
-    },
-    descriptions: {
-      conservative: {
-        low: '你对更高烈度、更刺激或更失控感的性体验接受度偏低，倾向温和、可控与循序推进。',
-        medium: '你对烈度的接受度居中，会视对象、情绪和安全边界决定是否上调强度。',
-        high: '你对更高刺激度、强烈感或张力更开放，往往不排斥更高烈度的体验设计。',
-      },
-      direct: {
-        low: '你不太吃高烈度路线，更偏向温和、稳一点、可控一点。',
-        medium: '你对烈度没有死板倾向，主要看人和当下状态。',
-        high: '你对高刺激、高张力、更强烈的体验接受度更高。',
-      },
-    },
-  },
-  {
-    id: 'mind_body_orientation',
-    order: 4,
-    name: {
-      conservative: '精神肉体倾向',
-      direct: '精神/肉体倾向',
-    },
-    codeLevels: { low: 'J', medium: 'K', high: 'L' },
-    scoreRanges,
-    crossPlan: {
-      selfQuestions: 4,
-      strong: { dimensionId: 'sexual_desire_intensity', count: 2 },
-      weak: [
-        { dimensionId: 'power_dynamic_tendency', count: 1 },
-        { dimensionId: 'intensity_openness', count: 1 },
-      ],
-    },
-    descriptions: {
-      conservative: {
-        low: '你更偏向肉体感受与即时体验本身，未必需要大量精神联结才能进入状态。',
-        medium: '你在精神联结与身体体验之间较为均衡，通常两者都会影响你的投入质量。',
-        high: '你更看重精神联结、情绪张力与心理层面的契合，纯身体刺激未必足够。',
-      },
-      direct: {
-        low: '你更偏身体向，不一定需要很强的心灵连结才有感觉。',
-        medium: '你两边都看，既要感觉也要状态。',
-        high: '你明显更偏精神向，心理连接不到位时身体刺激也未必够用。',
-      },
-    },
-  },
-  {
-    id: 'power_dynamic_tendency',
-    order: 5,
-    name: {
-      conservative: '权力动态倾向',
-      direct: '权力动态倾向',
-    },
-    codeLevels: { low: 'M', medium: 'N', high: 'O' },
-    scoreRanges,
-    crossPlan: {
-      selfQuestions: 4,
-      strong: { dimensionId: 'intensity_openness', count: 2 },
-      weak: [
-        { dimensionId: 'mind_body_orientation', count: 1 },
-        { dimensionId: 'relationship_openness', count: 1 },
-      ],
-    },
-    descriptions: {
-      conservative: {
-        low: '你对明显的权力差、控制感设计或角色动态兴趣较低，更偏向平衡、对等与自然流动。',
-        medium: '你对权力动态没有绝对排斥或绝对偏好，更多取决于关系、信任和情境氛围。',
-        high: '你对控制、交付、主导或服从等权力动态更敏感，也更可能把它视为核心张力来源。',
-      },
-      direct: {
-        low: '你不太吃权力差那一套，更偏平等自然一点。',
-        medium: '你对权力动态可接受，但不一定把它当核心。',
-        high: '你对主导、服从、控制感这类张力更有感觉。',
-      },
-    },
-  },
-  {
-    id: 'relationship_openness',
-    order: 6,
-    name: {
-      conservative: '关系开放度',
-      direct: '关系开放度',
-    },
-    codeLevels: { low: 'P', medium: 'Q', high: 'R' },
-    scoreRanges,
-    crossPlan: {
-      selfQuestions: 4,
-      strong: { dimensionId: 'sexual_spectrum_openness', count: 2 },
-      weak: [
-        { dimensionId: 'sexual_desire_intensity', count: 1 },
-        { dimensionId: 'power_dynamic_tendency', count: 1 },
-      ],
-    },
-    descriptions: {
-      conservative: {
-        low: '你对关系边界的开放方式较谨慎，更偏好排他、稳定与较少变量的结构。',
-        medium: '你对关系开放度保持审慎弹性，会结合价值观、安全感与关系质量做判断。',
-        high: '你对关系结构与边界安排更开放，较能接受非单一路径的连接形式。',
-      },
-      direct: {
-        low: '你更偏排他和稳定，不太想把关系边界开太大。',
-        medium: '你对关系开放度是审慎中立的，要看具体条件。',
-        high: '你对关系边界更开放，不会默认只有一种连接方式。',
-      },
-    },
-  },
-];
-
 const coreConfig = {
   authoringNote:
-    '该文件只保留通用 UI 文案、量表选项和免责声明。维度、题目、结果已拆分到独立 JSON，便于人工维护。',
+    '该文件只保留通用 UI 文案、量表选项和免责声明。维度、题目、结果已拆分到独立 JSON 目录，便于人工维护。',
   modes: {
     conservative: {
       id: 'conservative',
@@ -253,6 +67,22 @@ const coreConfig = {
       direct:
         '这一版重点是把结构搭干净：模式切换、随机出题、结果页、JSON 配置都已经接好，后面主要是继续填正式内容。',
     },
+    projectNoticeTitle: {
+      conservative: '项目声明',
+      direct: '项目声明',
+    },
+    projectNotice: {
+      conservative:
+        '本项目完全开源，默认视为无版权开放参考。作者明确反对将其用于任何商用、付费包装或变相售卖；如果你硬要拿去商用，我也确实没什么办法，但这不代表我支持。',
+      direct:
+        '这项目就是完全开源的整活产物，默认按无版权开放参考处理。我明确反对你拿去商用、卖课、套壳收费；你非要这么干我也拦不住，但别说我同意。',
+    },
+    pageDisclaimer: {
+      conservative:
+        '本页面内容以娱乐和整活为主，不构成任何医疗、心理、关系、法律或人生建议。',
+      direct:
+        '这页内容纯属整活，不构成任何建议，别拿它当医疗、心理、关系、法律或人生指导。',
+    },
     heroBadges: {
       conservative: [
         '36 题固定结构，每次开始随机排序',
@@ -276,7 +106,8 @@ const coreConfig = {
       direct: 'JBTI 作答页',
     },
     testHint: {
-      conservative: '你可以中途切换模式，题目与结果文案会同步刷新，已选答案不会丢失。',
+      conservative:
+        '你可以中途切换模式，题目与结果文案会同步刷新，已选答案不会丢失。',
       direct: '模式随时能切，文案和结果会一起变，答案不会掉。',
     },
     resultCodeLabel: {
@@ -305,41 +136,11 @@ const coreConfig = {
     },
   },
   likertOptions: [
-    {
-      value: 1,
-      label: {
-        conservative: '完全不符合',
-        direct: '完全不像',
-      },
-    },
-    {
-      value: 2,
-      label: {
-        conservative: '较不符合',
-        direct: '不太像',
-      },
-    },
-    {
-      value: 3,
-      label: {
-        conservative: '一般',
-        direct: '一般',
-      },
-    },
-    {
-      value: 4,
-      label: {
-        conservative: '较符合',
-        direct: '比较像',
-      },
-    },
-    {
-      value: 5,
-      label: {
-        conservative: '完全符合',
-        direct: '非常像',
-      },
-    },
+    { value: 1, label: defaultOptionLabels['1'] },
+    { value: 2, label: defaultOptionLabels['2'] },
+    { value: 3, label: defaultOptionLabels['3'] },
+    { value: 4, label: defaultOptionLabels['4'] },
+    { value: 5, label: defaultOptionLabels['5'] },
   ],
   disclaimer: {
     conservative:
@@ -388,92 +189,74 @@ const selfPromptSeeds = {
   ],
 };
 
-const crossBlueprints = [
-  {
-    id: 'cross-1',
-    dimensions: ['sexual_desire_intensity', 'intensity_openness'],
-    pairType: 'strong',
-    authoringNote:
-      '强关联交叉题 1：性欲强度 × 性烈度开放度。',
-  },
-  {
-    id: 'cross-2',
-    dimensions: ['sexual_desire_intensity', 'intensity_openness'],
-    pairType: 'strong',
-    authoringNote:
-      '强关联交叉题 2：性欲强度 × 性烈度开放度。',
-  },
-  {
-    id: 'cross-3',
-    dimensions: ['sexual_spectrum_openness', 'relationship_openness'],
-    pairType: 'strong',
-    authoringNote:
-      '强关联交叉题 1：性谱系开放度 × 关系开放度。',
-  },
-  {
-    id: 'cross-4',
-    dimensions: ['sexual_spectrum_openness', 'relationship_openness'],
-    pairType: 'strong',
-    authoringNote:
-      '强关联交叉题 2：性谱系开放度 × 关系开放度。',
-  },
-  {
-    id: 'cross-5',
-    dimensions: ['intensity_openness', 'power_dynamic_tendency'],
-    pairType: 'strong',
-    authoringNote:
-      '强关联交叉题 1：性烈度开放度 × 权力动态倾向。',
-  },
-  {
-    id: 'cross-6',
-    dimensions: ['intensity_openness', 'power_dynamic_tendency'],
-    pairType: 'strong',
-    authoringNote:
-      '强关联交叉题 2：性烈度开放度 × 权力动态倾向。',
-  },
-  {
-    id: 'cross-7',
-    dimensions: ['sexual_desire_intensity', 'mind_body_orientation'],
-    pairType: 'strong',
-    authoringNote:
-      '强关联交叉题 1：性欲强度 × 精神肉体倾向。',
-  },
-  {
-    id: 'cross-8',
-    dimensions: ['sexual_desire_intensity', 'mind_body_orientation'],
-    pairType: 'strong',
-    authoringNote:
-      '强关联交叉题 2：性欲强度 × 精神肉体倾向。',
-  },
-  {
-    id: 'cross-9',
-    dimensions: ['sexual_spectrum_openness', 'power_dynamic_tendency'],
-    pairType: 'weak',
-    authoringNote:
-      '弱关联交叉题：性谱系开放度 × 权力动态倾向。',
-  },
-  {
-    id: 'cross-10',
-    dimensions: ['mind_body_orientation', 'relationship_openness'],
-    pairType: 'weak',
-    authoringNote:
-      '弱关联交叉题：精神肉体倾向 × 关系开放度。该题用于补齐共享结构，可按需要替换为更合适的弱关联组合。',
-  },
-  {
-    id: 'cross-11',
-    dimensions: ['power_dynamic_tendency', 'relationship_openness'],
-    pairType: 'weak',
-    authoringNote:
-      '弱关联交叉题：权力动态倾向 × 关系开放度。',
-  },
-  {
-    id: 'cross-12',
-    dimensions: ['sexual_spectrum_openness', 'mind_body_orientation'],
-    pairType: 'weak',
-    authoringNote:
-      '弱关联交叉题：性谱系开放度 × 精神肉体倾向。该题用于补齐共享结构，可按需要替换为更合适的弱关联组合。',
-  },
-];
+const crossBlueprints = {
+  strong: [
+    {
+      id: 'cross-1',
+      dimensions: ['sexual_desire_intensity', 'intensity_openness'],
+      authoringNote: '强关联交叉题 1：性欲强度 × 性烈度开放度。',
+    },
+    {
+      id: 'cross-2',
+      dimensions: ['sexual_desire_intensity', 'intensity_openness'],
+      authoringNote: '强关联交叉题 2：性欲强度 × 性烈度开放度。',
+    },
+    {
+      id: 'cross-3',
+      dimensions: ['sexual_spectrum_openness', 'relationship_openness'],
+      authoringNote: '强关联交叉题 1：性谱系开放度 × 关系开放度。',
+    },
+    {
+      id: 'cross-4',
+      dimensions: ['sexual_spectrum_openness', 'relationship_openness'],
+      authoringNote: '强关联交叉题 2：性谱系开放度 × 关系开放度。',
+    },
+    {
+      id: 'cross-5',
+      dimensions: ['intensity_openness', 'power_dynamic_tendency'],
+      authoringNote: '强关联交叉题 1：性烈度开放度 × 权力动态倾向。',
+    },
+    {
+      id: 'cross-6',
+      dimensions: ['intensity_openness', 'power_dynamic_tendency'],
+      authoringNote: '强关联交叉题 2：性烈度开放度 × 权力动态倾向。',
+    },
+    {
+      id: 'cross-7',
+      dimensions: ['sexual_desire_intensity', 'mind_body_orientation'],
+      authoringNote: '强关联交叉题 1：性欲强度 × 精神肉体倾向。',
+    },
+    {
+      id: 'cross-8',
+      dimensions: ['sexual_desire_intensity', 'mind_body_orientation'],
+      authoringNote: '强关联交叉题 2：性欲强度 × 精神肉体倾向。',
+    },
+  ],
+  weak: [
+    {
+      id: 'cross-9',
+      dimensions: ['sexual_spectrum_openness', 'power_dynamic_tendency'],
+      authoringNote: '弱关联交叉题：性谱系开放度 × 权力动态倾向。',
+    },
+    {
+      id: 'cross-10',
+      dimensions: ['mind_body_orientation', 'relationship_openness'],
+      authoringNote:
+        '弱关联交叉题：精神肉体倾向 × 关系开放度。该题用于补齐共享结构，可按需要替换为更合适的弱关联组合。',
+    },
+    {
+      id: 'cross-11',
+      dimensions: ['power_dynamic_tendency', 'relationship_openness'],
+      authoringNote: '弱关联交叉题：权力动态倾向 × 关系开放度。',
+    },
+    {
+      id: 'cross-12',
+      dimensions: ['sexual_spectrum_openness', 'mind_body_orientation'],
+      authoringNote:
+        '弱关联交叉题：性谱系开放度 × 精神肉体倾向。该题用于补齐共享结构，可按需要替换为更合适的弱关联组合。',
+    },
+  ],
+};
 
 const illustrations = {
   lowWave: '/illustrations/steady-observer.svg',
@@ -481,40 +264,38 @@ const illustrations = {
   highDrive: '/illustrations/surge-driver.svg',
 };
 
+function sortById(items) {
+  return [...items].sort((left, right) => left.id.localeCompare(right.id, 'en'));
+}
+
 function buildEffectsByValue(profile) {
   return Object.fromEntries(
-    [1, 2, 3, 4, 5].map((value, index) => {
-      const multiplier = index * 0.25;
-
-      return [
-        String(value),
-        Object.fromEntries(
-          Object.entries(profile).map(([dimensionId, maxScore]) => [
-            dimensionId,
-            Number((maxScore * multiplier).toFixed(2)),
-          ])
-        ),
-      ];
-    })
+    [1, 2, 3, 4, 5].map((value, index) => [
+      String(value),
+      Object.fromEntries(
+        Object.entries(profile).map(([dimensionId, maxScore]) => [
+          dimensionId,
+          Number((maxScore * index * 0.25).toFixed(2)),
+        ])
+      ),
+    ])
   );
 }
 
-function buildSelfQuestions() {
-  return dimensions.flatMap((dimension) =>
-    selfPromptSeeds[dimension.id].map(([conservative, direct], index) => ({
-      id: `${dimension.id}-self-${index + 1}`,
-      type: 'self',
-      dimensions: [dimension.id],
-      prompt: { conservative, direct },
-      authoringNote: `纯自身题 ${index + 1}：仅服务于「${dimension.name.conservative}」。`,
-      optionLabelsByValue: defaultOptionLabels,
-      effectsByValue: buildEffectsByValue({ [dimension.id]: 5 }),
-    }))
-  );
+function buildSelfQuestionsForDimension(dimension) {
+  return selfPromptSeeds[dimension.id].map(([conservative, direct], index) => ({
+    id: `${dimension.id}-self-${index + 1}`,
+    type: 'self',
+    dimensions: [dimension.id],
+    prompt: { conservative, direct },
+    authoringNote: `纯自身题 ${index + 1}：仅服务于「${dimension.name.conservative}」。`,
+    optionLabelsByValue: defaultOptionLabels,
+    effectsByValue: buildEffectsByValue({ [dimension.id]: 5 }),
+  }));
 }
 
-function buildCrossQuestions() {
-  return crossBlueprints.map((item, index) => {
+function buildCrossQuestions(groupName) {
+  return crossBlueprints[groupName].map((item, index) => {
     const [leftId, rightId] = item.dimensions;
     const left = dimensions.find((dimension) => dimension.id === leftId);
     const right = dimensions.find((dimension) => dimension.id === rightId);
@@ -522,11 +303,11 @@ function buildCrossQuestions() {
     return {
       id: item.id,
       type: 'cross',
+      pairType: groupName,
       dimensions: item.dimensions,
-      pairType: item.pairType,
       prompt: {
-        conservative: `【待填写】交叉题 ${index + 1}：围绕「${left.name.conservative} × ${right.name.conservative}」的场景题。`,
-        direct: `【待填写】交叉题 ${index + 1}：${left.name.direct} × ${right.name.direct}。`,
+        conservative: `【待填写】${groupName === 'strong' ? '强关联' : '弱关联'}交叉题 ${index + 1}：围绕「${left.name.conservative} × ${right.name.conservative}」的场景题。`,
+        direct: `【待填写】${groupName === 'strong' ? '强关联' : '弱关联'}交叉题 ${index + 1}：${left.name.direct} × ${right.name.direct}。`,
       },
       authoringNote: item.authoringNote,
       optionLabelsByValue: defaultOptionLabels,
@@ -554,15 +335,12 @@ function pickIllustration(levels) {
 }
 
 function createResultEntry(levels) {
-  const profile = dimensions.map((dimension, index) => {
-    const level = levels[index];
-    return {
-      dimensionId: dimension.id,
-      dimensionName: dimension.name.conservative,
-      level,
-      letter: dimension.codeLevels[level],
-    };
-  });
+  const profile = dimensions.map((dimension, index) => ({
+    dimensionId: dimension.id,
+    dimensionName: dimension.name.conservative,
+    level: levels[index],
+    letter: dimension.codeLevels[levels[index]],
+  }));
 
   const code = profile.map((item) => item.letter).join('');
 
@@ -588,8 +366,8 @@ function createResultEntry(levels) {
   };
 }
 
-function generateResultGroups() {
-  const groups = { a: [], b: [], c: [] };
+function groupResultsByPrefix() {
+  const buckets = new Map();
   const levelKeys = ['low', 'medium', 'high'];
 
   for (const d1 of levelKeys) {
@@ -599,8 +377,10 @@ function generateResultGroups() {
           for (const d5 of levelKeys) {
             for (const d6 of levelKeys) {
               const entry = createResultEntry([d1, d2, d3, d4, d5, d6]);
-              const bucket = entry.code[0].toLowerCase();
-              groups[bucket].push(entry);
+              const prefix = entry.code.slice(0, 4);
+              const current = buckets.get(prefix) ?? [];
+              current.push(entry);
+              buckets.set(prefix, current);
             }
           }
         }
@@ -608,54 +388,136 @@ function generateResultGroups() {
     }
   }
 
-  return groups;
+  return buckets;
 }
 
-function sortQuestions(questions) {
-  return questions.sort((left, right) => left.id.localeCompare(right.id, 'en'));
+async function resetGeneratedDirs() {
+  await rm(questionsDir, { recursive: true, force: true });
+  await rm(resultsDir, { recursive: true, force: true });
+}
+
+async function writeJson(filePath, value) {
+  await mkdir(path.dirname(filePath), { recursive: true });
+  await writeFile(filePath, `${JSON.stringify(value, null, 2)}\n`);
+}
+
+async function writeQuestions() {
+  const selfManifest = [];
+
+  for (const dimension of dimensions) {
+    const fileName = `${dimension.id}.json`;
+    const relativePath = `./self/${fileName}`;
+    const content = sortById(buildSelfQuestionsForDimension(dimension));
+
+    await writeJson(path.join(questionsDir, 'self', fileName), content);
+    selfManifest.push({
+      dimensionId: dimension.id,
+      file: relativePath,
+      count: content.length,
+    });
+  }
+
+  const crossStrong = sortById(buildCrossQuestions('strong'));
+  const crossWeak = sortById(buildCrossQuestions('weak'));
+  const strongChunks = [
+    {
+      file: './cross/strong-a.json',
+      entries: crossStrong.slice(0, 4),
+    },
+    {
+      file: './cross/strong-b.json',
+      entries: crossStrong.slice(4),
+    },
+  ];
+
+  for (const chunk of strongChunks) {
+    await writeJson(
+      path.join(questionsDir, chunk.file.replace('./', '')),
+      chunk.entries
+    );
+  }
+
+  await writeJson(path.join(questionsDir, 'cross', 'weak.json'), crossWeak);
+  await writeJson(path.join(questionsDir, 'manifest.json'), {
+    authoringNote:
+      '题库已拆分为多个小文件；新增或移动题目时，记得同步更新此 manifest，或直接重新运行生成脚本。',
+    self: selfManifest,
+    cross: [
+      ...strongChunks.map((chunk, index) => ({
+        group: `strong-${index + 1}`,
+        file: chunk.file,
+        count: chunk.entries.length,
+      })),
+      { group: 'weak', file: './cross/weak.json', count: crossWeak.length },
+    ],
+  });
+
+  return selfManifest.length * 4 + crossStrong.length + crossWeak.length;
+}
+
+async function writeResults() {
+  const buckets = groupResultsByPrefix();
+
+  for (const [prefix, entries] of buckets.entries()) {
+    const [l1, l2, l3, l4] = prefix.split('');
+    await writeJson(
+      path.join(resultsDir, l1, l2, l3, `${l4}.json`),
+      entries
+    );
+  }
+
+  await writeJson(path.join(resultsDir, 'manifest.json'), {
+    authoringNote:
+      '结果按代码前四位拆分，每个文件仅包含相同前四位的 9 种代码组合。',
+    prefixLength: 4,
+    totalFiles: buckets.size,
+    totalResults: Array.from(buckets.values()).reduce(
+      (sum, entries) => sum + entries.length,
+      0
+    ),
+  });
+
+  return {
+    totalFiles: buckets.size,
+    totalResults: Array.from(buckets.values()).reduce(
+      (sum, entries) => sum + entries.length,
+      0
+    ),
+  };
+}
+
+async function cleanupLegacyFiles() {
+  const legacyFiles = [
+    'jbti-questions.json',
+    'jbti-results-a.json',
+    'jbti-results-b.json',
+    'jbti-results-c.json',
+  ];
+
+  await Promise.all(
+    legacyFiles.map((fileName) =>
+      rm(path.join(dataDir, fileName), { force: true })
+    )
+  );
 }
 
 async function main() {
   await mkdir(dataDir, { recursive: true });
+  await resetGeneratedDirs();
+  await cleanupLegacyFiles();
 
-  const questions = sortQuestions([
-    ...buildSelfQuestions(),
-    ...buildCrossQuestions(),
-  ]);
-  const results = generateResultGroups();
-
-  await writeFile(
-    path.join(dataDir, 'jbti-config.json'),
-    `${JSON.stringify(coreConfig, null, 2)}\n`
-  );
-  await writeFile(
-    path.join(dataDir, 'jbti-dimensions.json'),
-    `${JSON.stringify(dimensions, null, 2)}\n`
-  );
-  await writeFile(
-    path.join(dataDir, 'jbti-questions.json'),
-    `${JSON.stringify(questions, null, 2)}\n`
-  );
-  await writeFile(
-    path.join(dataDir, 'jbti-results-a.json'),
-    `${JSON.stringify(results.a, null, 2)}\n`
-  );
-  await writeFile(
-    path.join(dataDir, 'jbti-results-b.json'),
-    `${JSON.stringify(results.b, null, 2)}\n`
-  );
-  await writeFile(
-    path.join(dataDir, 'jbti-results-c.json'),
-    `${JSON.stringify(results.c, null, 2)}\n`
-  );
+  await writeJson(path.join(dataDir, 'jbti-config.json'), coreConfig);
+  const questionCount = await writeQuestions();
+  const resultStats = await writeResults();
 
   console.log('JBTI data generated successfully.');
   console.log(
     JSON.stringify(
       {
         dimensions: dimensions.length,
-        questions: questions.length,
-        results: results.a.length + results.b.length + results.c.length,
+        questions: questionCount,
+        resultFiles: resultStats.totalFiles,
+        results: resultStats.totalResults,
       },
       null,
       2

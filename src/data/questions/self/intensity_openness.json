@@ -1,0 +1,206 @@
+[
+  {
+    "id": "intensity_openness-self-1",
+    "type": "self",
+    "dimensions": [
+      "intensity_openness"
+    ],
+    "prompt": {
+      "conservative": "【待填写】围绕「性烈度开放度」的纯自身题 1。",
+      "direct": "【待填写】烈度开放度题 1。"
+    },
+    "authoringNote": "纯自身题 1：仅服务于「性烈度开放度」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
+    "effectsByValue": {
+      "1": {
+        "intensity_openness": 0
+      },
+      "2": {
+        "intensity_openness": 1.25
+      },
+      "3": {
+        "intensity_openness": 2.5
+      },
+      "4": {
+        "intensity_openness": 3.75
+      },
+      "5": {
+        "intensity_openness": 5
+      }
+    }
+  },
+  {
+    "id": "intensity_openness-self-2",
+    "type": "self",
+    "dimensions": [
+      "intensity_openness"
+    ],
+    "prompt": {
+      "conservative": "【待填写】围绕「性烈度开放度」的纯自身题 2。",
+      "direct": "【待填写】烈度开放度题 2。"
+    },
+    "authoringNote": "纯自身题 2：仅服务于「性烈度开放度」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
+    "effectsByValue": {
+      "1": {
+        "intensity_openness": 0
+      },
+      "2": {
+        "intensity_openness": 1.25
+      },
+      "3": {
+        "intensity_openness": 2.5
+      },
+      "4": {
+        "intensity_openness": 3.75
+      },
+      "5": {
+        "intensity_openness": 5
+      }
+    }
+  },
+  {
+    "id": "intensity_openness-self-3",
+    "type": "self",
+    "dimensions": [
+      "intensity_openness"
+    ],
+    "prompt": {
+      "conservative": "【待填写】围绕「性烈度开放度」的纯自身题 3。",
+      "direct": "【待填写】烈度开放度题 3。"
+    },
+    "authoringNote": "纯自身题 3：仅服务于「性烈度开放度」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
+    "effectsByValue": {
+      "1": {
+        "intensity_openness": 0
+      },
+      "2": {
+        "intensity_openness": 1.25
+      },
+      "3": {
+        "intensity_openness": 2.5
+      },
+      "4": {
+        "intensity_openness": 3.75
+      },
+      "5": {
+        "intensity_openness": 5
+      }
+    }
+  },
+  {
+    "id": "intensity_openness-self-4",
+    "type": "self",
+    "dimensions": [
+      "intensity_openness"
+    ],
+    "prompt": {
+      "conservative": "【待填写】围绕「性烈度开放度」的纯自身题 4。",
+      "direct": "【待填写】烈度开放度题 4。"
+    },
+    "authoringNote": "纯自身题 4：仅服务于「性烈度开放度」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
+    "effectsByValue": {
+      "1": {
+        "intensity_openness": 0
+      },
+      "2": {
+        "intensity_openness": 1.25
+      },
+      "3": {
+        "intensity_openness": 2.5
+      },
+      "4": {
+        "intensity_openness": 3.75
+      },
+      "5": {
+        "intensity_openness": 5
+      }
+    }
+  }
+]

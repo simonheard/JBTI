@@ -1,0 +1,206 @@
+[
+  {
+    "id": "mind_body_orientation-self-1",
+    "type": "self",
+    "dimensions": [
+      "mind_body_orientation"
+    ],
+    "prompt": {
+      "conservative": "【待填写】围绕「精神肉体倾向」的纯自身题 1。",
+      "direct": "【待填写】精神/肉体题 1。"
+    },
+    "authoringNote": "纯自身题 1：仅服务于「精神肉体倾向」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
+    "effectsByValue": {
+      "1": {
+        "mind_body_orientation": 0
+      },
+      "2": {
+        "mind_body_orientation": 1.25
+      },
+      "3": {
+        "mind_body_orientation": 2.5
+      },
+      "4": {
+        "mind_body_orientation": 3.75
+      },
+      "5": {
+        "mind_body_orientation": 5
+      }
+    }
+  },
+  {
+    "id": "mind_body_orientation-self-2",
+    "type": "self",
+    "dimensions": [
+      "mind_body_orientation"
+    ],
+    "prompt": {
+      "conservative": "【待填写】围绕「精神肉体倾向」的纯自身题 2。",
+      "direct": "【待填写】精神/肉体题 2。"
+    },
+    "authoringNote": "纯自身题 2：仅服务于「精神肉体倾向」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
+    "effectsByValue": {
+      "1": {
+        "mind_body_orientation": 0
+      },
+      "2": {
+        "mind_body_orientation": 1.25
+      },
+      "3": {
+        "mind_body_orientation": 2.5
+      },
+      "4": {
+        "mind_body_orientation": 3.75
+      },
+      "5": {
+        "mind_body_orientation": 5
+      }
+    }
+  },
+  {
+    "id": "mind_body_orientation-self-3",
+    "type": "self",
+    "dimensions": [
+      "mind_body_orientation"
+    ],
+    "prompt": {
+      "conservative": "【待填写】围绕「精神肉体倾向」的纯自身题 3。",
+      "direct": "【待填写】精神/肉体题 3。"
+    },
+    "authoringNote": "纯自身题 3：仅服务于「精神肉体倾向」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
+    "effectsByValue": {
+      "1": {
+        "mind_body_orientation": 0
+      },
+      "2": {
+        "mind_body_orientation": 1.25
+      },
+      "3": {
+        "mind_body_orientation": 2.5
+      },
+      "4": {
+        "mind_body_orientation": 3.75
+      },
+      "5": {
+        "mind_body_orientation": 5
+      }
+    }
+  },
+  {
+    "id": "mind_body_orientation-self-4",
+    "type": "self",
+    "dimensions": [
+      "mind_body_orientation"
+    ],
+    "prompt": {
+      "conservative": "【待填写】围绕「精神肉体倾向」的纯自身题 4。",
+      "direct": "【待填写】精神/肉体题 4。"
+    },
+    "authoringNote": "纯自身题 4：仅服务于「精神肉体倾向」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
+    "effectsByValue": {
+      "1": {
+        "mind_body_orientation": 0
+      },
+      "2": {
+        "mind_body_orientation": 1.25
+      },
+      "3": {
+        "mind_body_orientation": 2.5
+      },
+      "4": {
+        "mind_body_orientation": 3.75
+      },
+      "5": {
+        "mind_body_orientation": 5
+      }
+    }
+  }
+]
