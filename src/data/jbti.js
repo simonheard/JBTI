@@ -8,6 +8,48 @@ export const DIMENSIONS = dimensions;
 export const LIKERT_OPTIONS = config.likertOptions;
 export const DISCLAIMER = config.disclaimer;
 
+function compareOptionValues(left, right) {
+  const leftNumber = Number(left);
+  const rightNumber = Number(right);
+  const leftIsNumber = Number.isFinite(leftNumber);
+  const rightIsNumber = Number.isFinite(rightNumber);
+
+  if (leftIsNumber && rightIsNumber) {
+    return leftNumber - rightNumber;
+  }
+
+  return String(left).localeCompare(String(right), 'zh-Hans-CN');
+}
+
+function resolveQuestionOptions(question) {
+  const explicitValues = new Set([
+    ...Object.keys(question.optionLabelsByValue ?? {}),
+    ...Object.keys(question.effectsByValue ?? {}),
+  ]);
+
+  const fallbackValues =
+    explicitValues.size > 0
+      ? [...explicitValues]
+      : LIKERT_OPTIONS.map((option) => String(option.value));
+
+  return fallbackValues
+    .sort(compareOptionValues)
+    .map((rawValue) => {
+      const fallbackOption = LIKERT_OPTIONS.find(
+        (option) => String(option.value) === String(rawValue)
+      );
+
+      return {
+        value: rawValue,
+        label: question.optionLabelsByValue?.[String(rawValue)] ?? fallbackOption?.label ?? {
+          conservative: String(rawValue),
+          direct: String(rawValue),
+        },
+        effects: question.effectsByValue?.[String(rawValue)] ?? {},
+      };
+    });
+}
+
 const questionModules = import.meta.glob('./questions/**/*.json', {
   eager: true,
   import: 'default',
@@ -27,11 +69,7 @@ export const QUESTIONS = questionLists.flat().map((question) => ({
   ...question,
   conservative: question.prompt.conservative,
   direct: question.prompt.direct,
-  options: LIKERT_OPTIONS.map((option) => ({
-    value: option.value,
-    label: question.optionLabelsByValue?.[String(option.value)] ?? option.label,
-    effects: question.effectsByValue[String(option.value)] ?? {},
-  })),
+  options: resolveQuestionOptions(question),
 }));
 
 export const QUESTION_MAP = Object.fromEntries(

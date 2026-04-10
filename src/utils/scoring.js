@@ -26,6 +26,10 @@ function resolveLevel(score, ranges) {
 }
 
 export function calculateResult(answers, mode) {
+  const answeredCount = Object.keys(answers).filter((questionId) =>
+    Object.hasOwn(QUESTION_MAP, questionId)
+  ).length;
+
   const totals = Object.fromEntries(
     DIMENSIONS.map((dimension) => [
       dimension.id,
@@ -42,11 +46,11 @@ export function calculateResult(answers, mode) {
       totals[dimensionId].max += Math.max(...impacts);
     });
 
-    const answer = answers[question.id];
-    if (!answer) {
+    if (!Object.hasOwn(answers, question.id)) {
       return;
     }
 
+    const answer = answers[question.id];
     const selected = question.options.find((option) => option.value === answer);
     if (!selected) {
       return;
@@ -76,8 +80,6 @@ export function calculateResult(answers, mode) {
   return {
     code,
     dimensions,
-    completionRate: Math.round(
-      (Object.keys(answers).length / Object.keys(QUESTION_MAP).length) * 100
-    ),
+    completionRate: Math.round((answeredCount / Object.keys(QUESTION_MAP).length) * 100),
   };
 }

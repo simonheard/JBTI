@@ -206,13 +206,16 @@ function QuestionCard({ question, index, value, onChange, mode }) {
           exclusive
           value={value ?? null}
           onChange={(_, nextValue) => {
-            if (nextValue) {
+            if (nextValue !== null) {
               onChange(question.id, nextValue);
             }
           }}
           sx={{
             display: 'grid',
-            gridTemplateColumns: { xs: '1fr', sm: 'repeat(5, 1fr)' },
+            gridTemplateColumns: {
+              xs: '1fr',
+              sm: `repeat(${Math.max(question.options.length, 1)}, minmax(0, 1fr))`,
+            },
             gap: 1,
             '& .MuiToggleButtonGroup-grouped': {
               borderRadius: '18px !important',
@@ -250,8 +253,13 @@ function TestPage({
     sliceStart,
     sliceStart + QUESTIONS_PER_PAGE
   );
-  const progress = Math.round((Object.keys(answers).length / orderedQuestions.length) * 100);
-  const allCurrentAnswered = currentQuestions.every((question) => answers[question.id]);
+  const answeredCount = orderedQuestions.filter((question) =>
+    Object.hasOwn(answers, question.id)
+  ).length;
+  const progress = Math.round((answeredCount / orderedQuestions.length) * 100);
+  const allCurrentAnswered = currentQuestions.every((question) =>
+    Object.hasOwn(answers, question.id)
+  );
 
   return (
     <Stack spacing={3}>
@@ -265,7 +273,7 @@ function TestPage({
             <Box>
               <Typography variant="h4">{UI_COPY.testTitle[mode]}</Typography>
               <Typography variant="body2" color="text.secondary">
-                第 {page + 1} / {totalPages} 页，已完成 {Object.keys(answers).length} / {orderedQuestions.length} 题
+                第 {page + 1} / {totalPages} 页，已完成 {answeredCount} / {orderedQuestions.length} 题
               </Typography>
             </Box>
             <ModeToggle mode={mode} onChange={setMode} />
@@ -324,7 +332,7 @@ function TestPage({
             <Button
               variant="contained"
               color="secondary"
-              disabled={Object.keys(answers).length < orderedQuestions.length}
+              disabled={answeredCount < orderedQuestions.length}
               onClick={onSubmit}
             >
               {mode === 'conservative' ? '提交并生成结果' : '提交并生成结果'}
@@ -507,7 +515,14 @@ export default function App() {
   const result = useMemo(() => calculateResult(answers, mode), [answers, mode]);
 
   function createDebugAnswers() {
-    return Object.fromEntries(QUESTIONS.map((question) => [question.id, 3]));
+    return Object.fromEntries(
+      QUESTIONS.map((question) => [
+        question.id,
+        question.options[Math.floor(question.options.length / 2)]?.value ??
+          question.options[0]?.value ??
+          null,
+      ]).filter(([, value]) => value !== null)
+    );
   }
 
   useEffect(() => {
@@ -571,7 +586,7 @@ export default function App() {
                   );
                 }
 
-                if (nextStage === 'result' && Object.keys(answers).length < QUESTIONS.length) {
+                if (nextStage === 'result' && answeredCount < QUESTIONS.length) {
                   setAnswers(createDebugAnswers());
                 }
 
