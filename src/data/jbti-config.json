@@ -1,29 +1,29 @@
 {
-  "authoringNote": "该文件只保留通用 UI 文案、量表选项和免责声明。维度、题目、结果已拆分到独立 JSON 目录，便于人工维护。",
+  "authoringNote": "该文件只保留通用 UI 文案、量表选项和免责声明。维度、题目、结果已拆分到独立 JSON，便于人工维护。",
   "modes": {
     "conservative": {
       "id": "conservative",
-      "label": "保守模式",
-      "helper": "语气更温和、间接，适合第一次体验或后续细化文案。"
+      "label": "宝宝模式",
+      "helper": "我还是个宝宝，我无法接受太直白的性话题。"
     },
     "direct": {
       "id": "direct",
-      "label": "直白模式",
-      "helper": "语气更直接、清晰，适合做更明确的结果呈现。"
+      "label": "大人模式",
+      "helper": "我已经是大人了，你这些话题对我来说太小儿科了，甚至可以加点猛料。"
     }
   },
   "ui": {
     "heroBadge": {
       "conservative": "JBTI · 六维性人格光谱",
-      "direct": "JBTI · 六维性偏好拆解"
+      "direct": "JBTI · 超级性癖大赏"
     },
     "heroTitle": {
       "conservative": "通过 36 道题，形成一份关于性偏好结构的六维光谱画像。",
-      "direct": "36 道题，拆出你在欲望、开放度、权力和关系上的组合倾向。"
+      "direct": "36 道题，让我看看你是哪种变态。"
     },
     "heroDescription": {
-      "conservative": "当前版本已支持双模式切换、随机题序、分页答题、计分、结果总结和插画位。正式文案可以继续在拆分后的 JSON 中手动填充。",
-      "direct": "这一版重点是把结构搭干净：模式切换、随机出题、结果页、JSON 配置都已经接好，后面主要是继续填正式内容。"
+      "conservative": "",
+      "direct": ""
     },
     "projectNoticeTitle": {
       "conservative": "项目声明",
@@ -31,11 +31,11 @@
     },
     "projectNotice": {
       "conservative": "本项目完全开源，默认视为无版权开放参考。作者明确反对将其用于任何商用、付费包装或变相售卖；如果你硬要拿去商用，我也确实没什么办法，但这不代表我支持。",
-      "direct": "这项目就是完全开源的整活产物，默认按无版权开放参考处理。我明确反对你拿去商用、卖课、套壳收费；你非要这么干我也拦不住，但别说我同意。"
+      "direct": "这项目就是完全开源的整活产物，默认按无版权开放参考处理。我明确反对你拿去商用、卖课、套壳收费；你非要这么干我也拦不住🖕，但别说我同意。"
     },
     "pageDisclaimer": {
       "conservative": "本页面内容以娱乐和整活为主，不构成任何医疗、心理、关系、法律或人生建议。",
-      "direct": "这页内容纯属整活，不构成任何建议，别拿它当医疗、心理、关系、法律或人生指导。"
+      "direct": "本页面内容以娱乐和整活为主，不构成任何医疗、心理、关系、法律或人生建议。"
     },
     "heroBadges": {
       "conservative": [
@@ -53,7 +53,7 @@
     },
     "startButton": {
       "conservative": "开始测试",
-      "direct": "开始拆解"
+      "direct": "开始测试"
     },
     "testTitle": {
       "conservative": "JBTI 答题页",
@@ -61,31 +61,31 @@
     },
     "testHint": {
       "conservative": "你可以中途切换模式，题目与结果文案会同步刷新，已选答案不会丢失。",
-      "direct": "模式随时能切，文案和结果会一起变，答案不会掉。"
+      "direct": "你可以中途切换模式，题目与结果文案会同步刷新，已选答案不会丢失。"
     },
     "resultCodeLabel": {
       "conservative": "JBTI 最终人格代码",
-      "direct": "你的六维人格代码"
+      "direct": "JBTI 最终变态代码"
     },
     "resultSummaryTitle": {
       "conservative": "简单总结",
-      "direct": "一句话总结"
+      "direct": "简单总结"
     },
     "resultIllustrationTitle": {
-      "conservative": "结果插画",
-      "direct": "人格插画"
+      "conservative": "",
+      "direct": ""
     },
     "resultIllustrationDescription": {
-      "conservative": "结果插画已预留正式素材位，可继续按代码逐条替换为更精准的视觉资源。",
+      "conservative": "这里已经预留好插画位，后面直接换成正式图就行。",
       "direct": "这里已经预留好插画位，后面直接换成正式图就行。"
     },
     "shareButton": {
       "conservative": "分享结果",
-      "direct": "分享这份结果"
+      "direct": "分享结果"
     },
     "restartButton": {
       "conservative": "重新测试",
-      "direct": "再测一次"
+      "direct": "重新测试"
     }
   },
   "likertOptions": [
@@ -93,14 +93,14 @@
       "value": 1,
       "label": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "完全不符合"
       }
     },
     {
       "value": 2,
       "label": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "较不符合"
       }
     },
     {
@@ -114,19 +114,19 @@
       "value": 4,
       "label": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "较符合"
       }
     },
     {
       "value": 5,
       "label": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "完全符合"
       }
     }
   ],
   "disclaimer": {
     "conservative": "本测试结果仅用于自我观察与交流参考，不构成医疗、心理诊断、关系建议或风险评估结论。相关偏好会随阶段、经验、关系与安全感变化，请结合现实边界与充分同意原则理解。",
-    "direct": "这份结果只适合做自我观察，不是医疗、诊断或关系建议。人的偏好会变，任何实践都应以边界、同意和安全为前提。"
+    "direct": "你要真信了网上这些jb测试，我建议你去正经医院做个智力测试。"
   }
 }
