@@ -6,30 +6,30 @@
       "power_dynamic_tendency"
     ],
     "prompt": {
-      "conservative": "【待填写】围绕「权力动态倾向」的纯自身题 1。",
-      "direct": "【待填写】权力动态题 1。"
+      "conservative": "在我的性幻想里，最常出现的画面是自己被对方牢牢掌控、无法反抗。",
+      "direct": "我脑子里最常出现的性幻想，是自己被对方彻底按住、命令、玩弄到完全无法反抗、哭喊求饶。"
     },
-    "authoringNote": "纯自身题 1：仅服务于「权力动态倾向」。",
+    "authoringNote": "纯自身题 1：仅服务于「权力动态倾向」。从「幻想画面」层面切入，测量Sub倾向。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "完全不想被这样玩"
       },
       "2": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "不太想被彻底掌控"
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "挺想被按住玩弄"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "超想被操到彻底臣服"
       }
     },
     "effectsByValue": {
@@ -57,47 +57,47 @@
       "power_dynamic_tendency"
     ],
     "prompt": {
-      "conservative": "【待填写】围绕「权力动态倾向」的纯自身题 2。",
-      "direct": "【待填写】权力动态题 2。"
+      "conservative": "在亲密过程中，我更喜欢由我来发出指令、决定下一步该怎么做。",
+      "direct": "在操的时候，我最爽的就是由我来下命令、决定怎么操对方、把对方操到哭喊求饶。"
     },
-    "authoringNote": "纯自身题 2：仅服务于「权力动态倾向」。",
+    "authoringNote": "纯自身题 2：仅服务于「权力动态倾向」。从「言语与决策权」层面切入，测量Dom倾向。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "完全不想发号施令"
       },
       "2": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "不太想掌控对方"
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "挺想由我来指挥操"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "超想全程把对方操服"
       }
     },
     "effectsByValue": {
       "1": {
-        "power_dynamic_tendency": 0
+        "power_dynamic_tendency": 5
       },
       "2": {
-        "power_dynamic_tendency": 1.25
+        "power_dynamic_tendency": 3.75
       },
       "3": {
         "power_dynamic_tendency": 2.5
       },
       "4": {
-        "power_dynamic_tendency": 3.75
+        "power_dynamic_tendency": 1.25
       },
       "5": {
-        "power_dynamic_tendency": 5
+        "power_dynamic_tendency": 0
       }
     }
   },
@@ -108,30 +108,30 @@
       "power_dynamic_tendency"
     ],
     "prompt": {
-      "conservative": "【待填写】围绕「权力动态倾向」的纯自身题 3。",
-      "direct": "【待填写】权力动态题 3。"
+      "conservative": "当快要达到高潮的时候，我最自然的反应是想把控制权完全交给对方。",
+      "direct": "快要高潮的时候，我最自然的反应是想彻底放弃抵抗、被对方按住操到哭喊崩溃。"
     },
-    "authoringNote": "纯自身题 3：仅服务于「权力动态倾向」。",
+    "authoringNote": "纯自身题 3：仅服务于「权力动态倾向」。从「高潮瞬间本能反应」层面切入，测量Sub倾向。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "完全不想放弃控制"
       },
       "2": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "不太想被操到崩溃"
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "挺想被操到高潮臣服"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "超想高潮时彻底被操服"
       }
     },
     "effectsByValue": {
@@ -159,14 +159,14 @@
       "power_dynamic_tendency"
     ],
     "prompt": {
-      "conservative": "【待填写】围绕「权力动态倾向」的纯自身题 4。",
-      "direct": "【待填写】权力动态题 4。"
+      "conservative": "性爱结束后，我最满足的感觉是知道自己刚才完全掌控了对方。",
+      "direct": "操完之后，我最爽的感觉是对方刚才被我操到哭喊求饶、彻底臣服、腿软到站不起来。"
     },
-    "authoringNote": "纯自身题 4：仅服务于「权力动态倾向」。",
+    "authoringNote": "纯自身题 4：仅服务于「权力动态倾向」。从「事后心理满足」层面切入，测量Dom倾向。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "完全不是这样"
       },
       "2": {
         "conservative": "较不符合",
@@ -174,32 +174,32 @@
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "挺想操到对方崩溃"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "超想操完看对方被我操服"
       }
     },
     "effectsByValue": {
       "1": {
-        "power_dynamic_tendency": 0
+        "power_dynamic_tendency": 5
       },
       "2": {
-        "power_dynamic_tendency": 1.25
+        "power_dynamic_tendency": 3.75
       },
       "3": {
         "power_dynamic_tendency": 2.5
       },
       "4": {
-        "power_dynamic_tendency": 3.75
+        "power_dynamic_tendency": 1.25
       },
       "5": {
-        "power_dynamic_tendency": 5
+        "power_dynamic_tendency": 0
       }
     }
   }

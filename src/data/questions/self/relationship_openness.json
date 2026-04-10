@@ -6,30 +6,30 @@
       "relationship_openness"
     ],
     "prompt": {
-      "conservative": "【待填写】围绕「关系开放度」的纯自身题 1。",
-      "direct": "【待填写】关系开放度题 1。"
+      "conservative": "我最满足的关系状态是只和一个人保持长期、专一的亲密连接。",
+      "direct": "我最爽的关系就是只和一个人长期操，不想和别人分享也不想被别人分享。"
     },
-    "authoringNote": "纯自身题 1：仅服务于「关系开放度」。",
+    "authoringNote": "纯自身题 1：仅服务于「关系开放度」。重点在长期专一情感与性独占欲。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "完全不想只操一个人"
       },
       "2": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "不太想专一"
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "挺想只和一个人操"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "超想长期只操一个人"
       }
     },
     "effectsByValue": {
@@ -57,30 +57,30 @@
       "relationship_openness"
     ],
     "prompt": {
-      "conservative": "【待填写】围绕「关系开放度」的纯自身题 2。",
-      "direct": "【待填写】关系开放度题 2。"
+      "conservative": "我能接受自己或伴侣同时和别人保持亲密关系，只要大家坦诚沟通。",
+      "direct": "我能接受自己或伴侣同时和好几个人操，只要大家说清楚就行。"
     },
-    "authoringNote": "纯自身题 2：仅服务于「关系开放度」。",
+    "authoringNote": "纯自身题 2：仅服务于「关系开放度」。重点在多伴侣接受度。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "完全接受不了"
       },
       "2": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "不太能接受"
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "挺能接受"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "超想大家一起操"
       }
     },
     "effectsByValue": {
@@ -108,47 +108,47 @@
       "relationship_openness"
     ],
     "prompt": {
-      "conservative": "【待填写】围绕「关系开放度」的纯自身题 3。",
-      "direct": "【待填写】关系开放度题 3。"
+      "conservative": "当想到伴侣和其他人发生亲密关系时，我会感到强烈的不安和排斥。",
+      "direct": "一想到伴侣被别人操，我就觉得很不爽、很想独占。"
     },
-    "authoringNote": "纯自身题 3：仅服务于「关系开放度」。",
+    "authoringNote": "纯自身题 3：仅服务于「关系开放度」。重点在嫉妒/独占反应。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "完全不会不爽"
       },
       "2": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "不太会不爽"
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "挺会不爽"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "超想独占不许别人操"
       }
     },
     "effectsByValue": {
       "1": {
-        "relationship_openness": 0
+        "relationship_openness": 5
       },
       "2": {
-        "relationship_openness": 1.25
+        "relationship_openness": 3.75
       },
       "3": {
         "relationship_openness": 2.5
       },
       "4": {
-        "relationship_openness": 3.75
+        "relationship_openness": 1.25
       },
       "5": {
-        "relationship_openness": 5
+        "relationship_openness": 0
       }
     }
   },
@@ -159,30 +159,30 @@
       "relationship_openness"
     ],
     "prompt": {
-      "conservative": "【待填写】围绕「关系开放度」的纯自身题 4。",
-      "direct": "【待填写】关系开放度题 4。"
+      "conservative": "我更向往同时和多个人维持亲密关系，而不是只和一个人。",
+      "direct": "我更想同时和好几个人操，而不是只固定一个人。"
     },
-    "authoringNote": "纯自身题 4：仅服务于「关系开放度」。",
+    "authoringNote": "纯自身题 4：仅服务于「关系开放度」。重点在多重关系向往度。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "完全不想多P"
       },
       "2": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "不太想同时操几个"
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "挺想同时操几个"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "超想被一群人轮着操"
       }
     },
     "effectsByValue": {

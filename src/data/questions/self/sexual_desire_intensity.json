@@ -6,30 +6,30 @@
       "sexual_desire_intensity"
     ],
     "prompt": {
-      "conservative": "【待填写】围绕「性欲强度」的纯自身题 1。",
-      "direct": "【待填写】欲望强度题 1。"
+      "conservative": "我一天中会反复出现强烈的性欲念头，几乎每隔几个小时就被性幻想打断。",
+      "direct": "我一天到晚脑子里全是想操人或被操的画面，几乎每隔几个小时就硬得难受或湿得难受。"
     },
-    "authoringNote": "纯自身题 1：仅服务于「性欲强度」。",
+    "authoringNote": "纯自身题 1：仅服务于「性欲强度」。重点在「欲望出现的频率」。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "完全不会这样"
       },
       "2": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "不太频繁"
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "挺频繁的"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "一天到晚都想操或被操"
       }
     },
     "effectsByValue": {
@@ -57,30 +57,30 @@
       "sexual_desire_intensity"
     ],
     "prompt": {
-      "conservative": "【待填写】围绕「性欲强度」的纯自身题 2。",
-      "direct": "【待填写】欲望强度题 2。"
+      "conservative": "当性欲突然来临时，那种冲动非常猛烈，几乎像一股热浪瞬间占据全身。",
+      "direct": "性欲一上来我就硬得发疼或湿得发烫，那种冲动猛得像要把我整个人烧起来。"
     },
-    "authoringNote": "纯自身题 2：仅服务于「性欲强度」。",
+    "authoringNote": "纯自身题 2：仅服务于「性欲强度」。重点在「欲望的强烈程度」。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "完全不会这么猛"
       },
       "2": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "不太猛烈"
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "挺猛的"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "超猛，像火烧一样"
       }
     },
     "effectsByValue": {
@@ -108,30 +108,30 @@
       "sexual_desire_intensity"
     ],
     "prompt": {
-      "conservative": "【待填写】围绕「性欲强度」的纯自身题 3。",
-      "direct": "【待填写】欲望强度题 3。"
+      "conservative": "我的性欲一旦被唤起，通常会持续很久，很难在短时间内完全平息下来。",
+      "direct": "我一旦硬起来或湿起来，欲望能拖好几个小时甚至一整天都消不下去。"
     },
-    "authoringNote": "纯自身题 3：仅服务于「性欲强度」。",
+    "authoringNote": "纯自身题 3：仅服务于「性欲强度」。重点在「欲望的持久性」。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "完全不会持续这么久"
       },
       "2": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "不太持久"
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "挺持久的"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "能拖一整天都想操或被操"
       }
     },
     "effectsByValue": {
@@ -159,30 +159,30 @@
       "sexual_desire_intensity"
     ],
     "prompt": {
-      "conservative": "【待填写】围绕「性欲强度」的纯自身题 4。",
-      "direct": "【待填写】欲望强度题 4。"
+      "conservative": "性欲常常让我在日常生活中分心，很难集中注意力去做其他事情。",
+      "direct": "性欲一上来我就整天心痒难耐，脑子里全是想操人或被操的画面，什么事都做不下去。"
     },
-    "authoringNote": "纯自身题 4：仅服务于「性欲强度」。",
+    "authoringNote": "纯自身题 4：仅服务于「性欲强度」。重点在「欲望对日常生活的占据程度」。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "完全不会影响我"
       },
       "2": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "不太影响我"
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "挺影响我做事的"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "一整天脑子里都是操或被操"
       }
     },
     "effectsByValue": {
