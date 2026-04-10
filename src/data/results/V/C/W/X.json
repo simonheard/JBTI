@@ -47,7 +47,11 @@
         "level": "low",
         "letter": "O"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "VCWXUN",
@@ -97,7 +101,11 @@
         "level": "medium",
         "letter": "N"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "VCWXUP",
@@ -147,7 +155,11 @@
         "level": "high",
         "letter": "P"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "VCWXTO",
@@ -197,7 +209,11 @@
         "level": "low",
         "letter": "O"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "VCWXTN",
@@ -209,7 +225,10 @@
       "conservative": "你属于均衡多变型人格，各项维度均处于中等。你能在关系中灵活切换主导与顺从角色，对开放程度持中立态度。你喜欢根据情境调整互动方式，性爱过程注重情感交流与信任。你是让人觉得聪明且富有变化的伴侣，在安全环境中能充分享受不同层面的愉悦。",
       "direct": "你性欲强度中等，对各种玩法保持好奇。你能灵活切换Dom与Sub角色，对关系开放度持中立态度。有时你会把对方按住玩弄到哭喊求饶，有时却想被对方彻底支配、命令跪下、玩弄到全身颤抖高潮。你会被贯穿到腿软喷射、彻底臣服，那种角色切换带来的强烈快感会让你爽到极致。"
     },
-    "illustrationUrl": "/illustrations/balanced-spectrum.svg",
+    "illustrationUrl": {
+      "conservative": "/illustrations/vcwxtn/conservative.png",
+      "direct": "/illustrations/vcwxtn/direct.jpg"
+    },
     "profile": [
       {
         "dimensionId": "sexual_desire_intensity",
@@ -247,7 +266,11 @@
         "level": "medium",
         "letter": "N"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": "占位符，准备之后写黄文放这"
+    }
   },
   {
     "code": "VCWXTP",
@@ -297,7 +320,11 @@
         "level": "high",
         "letter": "P"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "VCWXDO",
@@ -347,7 +374,11 @@
         "level": "low",
         "letter": "O"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "VCWXDN",
@@ -397,7 +428,11 @@
         "level": "medium",
         "letter": "N"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "VCWXDP",
@@ -447,6 +482,10 @@
         "level": "high",
         "letter": "P"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   }
 ]

@@ -47,7 +47,11 @@
         "level": "low",
         "letter": "O"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "HSMEUN",
@@ -97,7 +101,11 @@
         "level": "medium",
         "letter": "N"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "HSMEUP",
@@ -147,7 +155,11 @@
         "level": "high",
         "letter": "P"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "HSMETO",
@@ -197,7 +209,11 @@
         "level": "low",
         "letter": "O"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "HSMETN",
@@ -247,7 +263,11 @@
         "level": "medium",
         "letter": "N"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "HSMETP",
@@ -297,7 +317,11 @@
         "level": "high",
         "letter": "P"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "HSMEDO",
@@ -347,7 +371,11 @@
         "level": "low",
         "letter": "O"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "HSMEDN",
@@ -397,7 +425,11 @@
         "level": "medium",
         "letter": "N"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "HSMEDP",
@@ -447,6 +479,10 @@
         "level": "high",
         "letter": "P"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   }
 ]

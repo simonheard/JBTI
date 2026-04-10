@@ -361,6 +361,10 @@ function createResultEntry(levels) {
         .map((item) => `${item.dimensionName}${levelLabelMap[item.level].direct}`)
         .join('、')}。这里先放占位总结，后面可以直接手改。`,
     },
+    extra_gift: {
+      conservative: '',
+      direct: '',
+    },
     illustrationUrl: pickIllustration(levels),
     profile,
   };

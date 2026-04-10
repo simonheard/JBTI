@@ -47,7 +47,11 @@
         "level": "low",
         "letter": "O"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "VBMEUN",
@@ -97,7 +101,11 @@
         "level": "medium",
         "letter": "N"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "VBMEUP",
@@ -147,7 +155,11 @@
         "level": "high",
         "letter": "P"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "VBMETO",
@@ -197,7 +209,11 @@
         "level": "low",
         "letter": "O"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "VBMETN",
@@ -247,7 +263,11 @@
         "level": "medium",
         "letter": "N"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "VBMETP",
@@ -297,7 +317,11 @@
         "level": "high",
         "letter": "P"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "VBMEDO",
@@ -347,7 +371,11 @@
         "level": "low",
         "letter": "O"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "VBMEDN",
@@ -397,7 +425,11 @@
         "level": "medium",
         "letter": "N"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "VBMEDP",
@@ -447,6 +479,10 @@
         "level": "high",
         "letter": "P"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   }
 ]

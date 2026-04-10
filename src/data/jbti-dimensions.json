@@ -3,8 +3,8 @@
     "id": "sexual_desire_intensity",
     "order": 1,
     "name": {
-      "conservative": "性欲强度",
-      "direct": "欲望强度"
+      "conservative": "欲望强度",
+      "direct": "性欲强度"
     },
     "codeLevels": {
       "low": "Q",
@@ -59,8 +59,8 @@
     "id": "sexual_spectrum_openness",
     "order": 2,
     "name": {
-      "conservative": "性谱系开放度",
-      "direct": "谱系开放度"
+      "conservative": "谱系开放度",
+      "direct": "性谱系开放度"
     },
     "codeLevels": {
       "low": "S",
@@ -115,8 +115,8 @@
     "id": "intensity_openness",
     "order": 3,
     "name": {
-      "conservative": "性烈度开放度",
-      "direct": "烈度开放度"
+      "conservative": "烈度开放度",
+      "direct": "性烈度开放度"
     },
     "codeLevels": {
       "low": "M",
@@ -172,7 +172,7 @@
     "order": 4,
     "name": {
       "conservative": "精神肉体倾向",
-      "direct": "精神/肉体倾向"
+      "direct": "精神肉体倾向"
     },
     "codeLevels": {
       "low": "F",

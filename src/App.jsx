@@ -347,7 +347,11 @@ function ResultPage({ mode, setMode, result, preset, loading, error, onRestart }
       : mode === 'conservative'
         ? '当前代码没有找到对应结果文案，请检查结果配置。'
         : '这组代码还没配到对应结果文案。');
-  const resultIllustration = preset?.illustrationUrl ?? '/illustrations/balanced-spectrum.svg';
+  const resultExtraGift = preset?.extra_gift?.[mode]?.trim() ?? '';
+  const resultIllustration =
+    (typeof preset?.illustrationUrl === 'string'
+      ? preset.illustrationUrl
+      : preset?.illustrationUrl?.[mode]) ?? '/illustrations/balanced-spectrum.svg';
 
   return (
     <Stack spacing={3}>
@@ -384,32 +388,47 @@ function ResultPage({ mode, setMode, result, preset, loading, error, onRestart }
       </GlassCard>
 
       <GlassCard>
-        <Stack spacing={1.25}>
-          <Typography variant="h5">{UI_COPY.resultSummaryTitle[mode]}</Typography>
-          <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
-            {resultSummary}
-          </Typography>
-        </Stack>
-      </GlassCard>
-
-      <GlassCard>
-        <Stack spacing={2}>
-          <Box>
-            <Typography variant="h5">{UI_COPY.resultIllustrationTitle[mode]}</Typography>
-            <Typography variant="body2" color="text.secondary">
-              {UI_COPY.resultIllustrationDescription[mode]}
+        <Stack direction={{ xs: 'column', md: 'row' }} spacing={{ xs: 3, md: 4 }} alignItems="stretch">
+          <Stack spacing={1.25} sx={{ flex: 1, minWidth: 0 }}>
+            <Typography variant="h5">{UI_COPY.resultSummaryTitle[mode]}</Typography>
+            <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
+              {resultSummary}
             </Typography>
-          </Box>
-          <CardMedia
-            component="img"
-            image={resultIllustration}
-            alt={resultName}
-            sx={{
-              borderRadius: 4,
-              border: '1px solid rgba(60,60,60,0.08)',
-              backgroundColor: 'rgba(255,255,255,0.6)',
-            }}
-          />
+            {resultExtraGift ? (
+              <Stack spacing={0.75} sx={{ pt: 1 }}>
+                <Typography variant="subtitle1" color="secondary.main" fontWeight={700}>
+                  {mode === 'conservative' ? '额外彩蛋' : 'Extra Gift'}
+                </Typography>
+                <Typography variant="body2" color="text.secondary" sx={{ lineHeight: 1.8 }}>
+                  {resultExtraGift}
+                </Typography>
+              </Stack>
+            ) : null}
+          </Stack>
+
+          <Stack spacing={2.5} alignItems="center" sx={{ flex: 1, minWidth: 0 }}>
+            <Box sx={{ width: '100%' }}>
+              <Typography variant="h5">{UI_COPY.resultIllustrationTitle[mode]}</Typography>
+            </Box>
+            <CardMedia
+              component="img"
+              image={resultIllustration}
+              alt={resultName}
+              loading="lazy"
+              fetchpriority="low"
+              decoding="async"
+              sx={{
+                width: '100%',
+                maxWidth: { xs: '100%', md: 560 },
+                maxHeight: { xs: 420, md: 460 },
+                objectFit: 'contain',
+                alignSelf: 'center',
+                borderRadius: 4,
+                border: '1px solid rgba(60,60,60,0.08)',
+                backgroundColor: 'rgba(255,255,255,0.6)',
+              }}
+            />
+          </Stack>
         </Stack>
       </GlassCard>
 

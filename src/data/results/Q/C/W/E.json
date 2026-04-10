@@ -47,7 +47,11 @@
         "level": "low",
         "letter": "O"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "QCWEUN",
@@ -97,7 +101,11 @@
         "level": "medium",
         "letter": "N"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "QCWEUP",
@@ -147,7 +155,11 @@
         "level": "high",
         "letter": "P"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "QCWETO",
@@ -197,7 +209,11 @@
         "level": "low",
         "letter": "O"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "QCWETN",
@@ -247,7 +263,11 @@
         "level": "medium",
         "letter": "N"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "QCWETP",
@@ -297,7 +317,11 @@
         "level": "high",
         "letter": "P"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "QCWEDO",
@@ -347,7 +371,11 @@
         "level": "low",
         "letter": "O"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "QCWEDN",
@@ -397,7 +425,11 @@
         "level": "medium",
         "letter": "N"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   },
   {
     "code": "QCWEDP",
@@ -447,6 +479,10 @@
         "level": "high",
         "letter": "P"
       }
-    ]
+    ],
+    "extra_gift": {
+      "conservative": "",
+      "direct": ""
+    }
   }
 ]
