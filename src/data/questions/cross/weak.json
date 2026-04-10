@@ -1,5 +1,63 @@
 [
   {
+    "id": "cross-9",
+    "type": "cross",
+    "pairType": "weak",
+    "dimensions": [
+      "sexual_spectrum_openness",
+      "power_dynamic_tendency"
+    ],
+    "prompt": {
+      "conservative": "不论伴侣的性别或身份如何变化，我对主导或被主导角色的偏好通常不会改变。",
+      "direct": "不管对方是男是女还是其他身份，我还是想明确谁是主人、谁是奴隶，谁负责操谁、谁被谁操。"
+    },
+    "authoringNote": "弱关联交叉题：性谱系开放度 × 权力动态倾向；测对象开放时，权力偏好的稳定性。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不想固定谁操谁"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太想明确谁上谁下"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "挺想固定谁操谁"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "超想无论什么对象都明确谁操谁、谁被谁操"
+      }
+    },
+    "effectsByValue": {
+      "1": {
+        "sexual_spectrum_openness": 0,
+        "power_dynamic_tendency": 0
+      },
+      "2": {
+        "sexual_spectrum_openness": 0.63,
+        "power_dynamic_tendency": 0.63
+      },
+      "3": {
+        "sexual_spectrum_openness": 1.25,
+        "power_dynamic_tendency": 1.25
+      },
+      "4": {
+        "sexual_spectrum_openness": 1.88,
+        "power_dynamic_tendency": 1.88
+      },
+      "5": {
+        "sexual_spectrum_openness": 2.5,
+        "power_dynamic_tendency": 2.5
+      }
+    }
+  },
+  {
     "id": "cross-10",
     "type": "cross",
     "pairType": "weak",
@@ -8,30 +66,30 @@
       "relationship_openness"
     ],
     "prompt": {
-      "conservative": "【待填写】弱关联交叉题 2：围绕「精神肉体倾向 × 关系开放度」的场景题。",
-      "direct": "【待填写】弱关联交叉题 2：精神/肉体倾向 × 关系开放度。"
+      "conservative": "对我来说，身体上的吸引与直接感官体验，比关系是否独占更能决定我对一段关系的满足程度。",
+      "direct": "对我来说，光被操、被摸、被插到爽翻天，或者操别人到喷，比关系是不是只和一个人更重要。"
     },
-    "authoringNote": "弱关联交叉题：精神肉体倾向 × 关系开放度。该题用于补齐共享结构，可按需要替换为更合适的弱关联组合。",
+    "authoringNote": "弱关联交叉题：精神肉体倾向 × 关系开放度；测身体导向相对于独占性的优先级。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "完全不行"
       },
       "2": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "不太行"
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "挺能接受"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "超想光操或被操就够了"
       }
     },
     "effectsByValue": {
@@ -66,30 +124,30 @@
       "relationship_openness"
     ],
     "prompt": {
-      "conservative": "【待填写】弱关联交叉题 3：围绕「权力动态倾向 × 关系开放度」的场景题。",
-      "direct": "【待填写】弱关联交叉题 3：权力动态倾向 × 关系开放度。"
+      "conservative": "无论关系是否独占，我通常都会希望彼此之间存在明确的主导或被主导分工。",
+      "direct": "不管是只和一个人操还是和好几个人操，我都想明确谁是主人、谁是奴隶，谁负责操谁、谁被谁操。"
     },
-    "authoringNote": "弱关联交叉题：权力动态倾向 × 关系开放度。",
+    "authoringNote": "弱关联交叉题：权力动态倾向 × 关系开放度；测权力偏好跨关系结构的稳定性。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "完全不想固定"
       },
       "2": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "不太想固定"
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "挺想明确谁操谁"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "超想无论多少人我都想固定谁操谁"
       }
     },
     "effectsByValue": {
@@ -124,30 +182,30 @@
       "mind_body_orientation"
     ],
     "prompt": {
-      "conservative": "【待填写】弱关联交叉题 4：围绕「性谱系开放度 × 精神肉体倾向」的场景题。",
-      "direct": "【待填写】弱关联交叉题 4：谱系开放度 × 精神/肉体倾向。"
+      "conservative": "相比伴侣的性别或身份，我是否能与对方建立深层情感连接，更决定我会不会投入这段关系。",
+      "direct": "相比对方是男是女还是其他身份，我更看重能不能和对方建立深层情感连接，才能真正想操或被操。"
     },
-    "authoringNote": "弱关联交叉题：性谱系开放度 × 精神肉体倾向。该题用于补齐共享结构，可按需要替换为更合适的弱关联组合。",
+    "authoringNote": "弱关联交叉题：性谱系开放度 × 精神肉体倾向；测对象开放时，情感连接在投入中的优先级。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "完全不需要"
       },
       "2": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "不太需要"
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "挺需要的"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "没感情根本操不动或被操不动"
       }
     },
     "effectsByValue": {
@@ -170,64 +228,6 @@
       "5": {
         "sexual_spectrum_openness": 2.5,
         "mind_body_orientation": 2.5
-      }
-    }
-  },
-  {
-    "id": "cross-9",
-    "type": "cross",
-    "pairType": "weak",
-    "dimensions": [
-      "sexual_spectrum_openness",
-      "power_dynamic_tendency"
-    ],
-    "prompt": {
-      "conservative": "【待填写】弱关联交叉题 1：围绕「性谱系开放度 × 权力动态倾向」的场景题。",
-      "direct": "【待填写】弱关联交叉题 1：谱系开放度 × 权力动态倾向。"
-    },
-    "authoringNote": "弱关联交叉题：性谱系开放度 × 权力动态倾向。",
-    "optionLabelsByValue": {
-      "1": {
-        "conservative": "完全不符合",
-        "direct": "完全不像"
-      },
-      "2": {
-        "conservative": "较不符合",
-        "direct": "不太像"
-      },
-      "3": {
-        "conservative": "一般",
-        "direct": "一般"
-      },
-      "4": {
-        "conservative": "较符合",
-        "direct": "比较像"
-      },
-      "5": {
-        "conservative": "完全符合",
-        "direct": "非常像"
-      }
-    },
-    "effectsByValue": {
-      "1": {
-        "sexual_spectrum_openness": 0,
-        "power_dynamic_tendency": 0
-      },
-      "2": {
-        "sexual_spectrum_openness": 0.63,
-        "power_dynamic_tendency": 0.63
-      },
-      "3": {
-        "sexual_spectrum_openness": 1.25,
-        "power_dynamic_tendency": 1.25
-      },
-      "4": {
-        "sexual_spectrum_openness": 1.88,
-        "power_dynamic_tendency": 1.88
-      },
-      "5": {
-        "sexual_spectrum_openness": 2.5,
-        "power_dynamic_tendency": 2.5
       }
     }
   }

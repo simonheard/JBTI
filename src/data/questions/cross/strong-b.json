@@ -8,30 +8,30 @@
       "power_dynamic_tendency"
     ],
     "prompt": {
-      "conservative": "【待填写】强关联交叉题 5：围绕「性烈度开放度 × 权力动态倾向」的场景题。",
-      "direct": "【待填写】强关联交叉题 5：烈度开放度 × 权力动态倾向。"
+      "conservative": "在日常生活中，当我感到压力很大时，我更倾向于让对方用强烈的方式把我从压力中拉出来。",
+      "direct": "当我压力爆棚的时候，我最想被对方直接按住、粗暴贯穿、操到大脑一片空白、彻底忘记压力的玩法。"
     },
-    "authoringNote": "强关联交叉题 1：性烈度开放度 × 权力动态倾向。",
+    "authoringNote": "强关联交叉题 5：性烈度开放度 × 权力动态倾向（压力释放场景下的Sub偏好）。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "完全不想"
       },
       "2": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "不太想"
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "挺想被这么狠"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "超想被操到忘掉压力"
       }
     },
     "effectsByValue": {
@@ -66,30 +66,30 @@
       "power_dynamic_tendency"
     ],
     "prompt": {
-      "conservative": "【待填写】强关联交叉题 6：围绕「性烈度开放度 × 权力动态倾向」的场景题。",
-      "direct": "【待填写】强关联交叉题 6：烈度开放度 × 权力动态倾向。"
+      "conservative": "在公共场合或有被发现风险的情况下，我更倾向于由我主动主导对方进行隐秘的激烈互动。",
+      "direct": "在公共场合或有被发现风险的时候，我最想偷偷把对方按住、粗暴玩弄、操到对方忍不住发出声音。"
     },
-    "authoringNote": "强关联交叉题 2：性烈度开放度 × 权力动态倾向。",
+    "authoringNote": "强关联交叉题 6：性烈度开放度 × 权力动态倾向（风险场景下的Dom偏好）。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "完全不想"
       },
       "2": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "不太想"
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "挺想偷偷操"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "超想在公共场合支配对方"
       }
     },
     "effectsByValue": {
@@ -124,30 +124,30 @@
       "mind_body_orientation"
     ],
     "prompt": {
-      "conservative": "【待填写】强关联交叉题 7：围绕「性欲强度 × 精神肉体倾向」的场景题。",
-      "direct": "【待填写】强关联交叉题 7：欲望强度 × 精神/肉体倾向。"
+      "conservative": "即使只是短暂的独处时间，我的性欲也能通过单纯的身体自我刺激得到充分满足。",
+      "direct": "即使只是一个人在家，我也能靠自己摸、插、玩弄身体就爽到喷，不需要任何情感连接。"
     },
-    "authoringNote": "强关联交叉题 1：性欲强度 × 精神肉体倾向。",
+    "authoringNote": "强关联交叉题 7：性欲强度 × 精神肉体倾向（独处自慰场景下的纯肉体倾向）。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "完全不行"
       },
       "2": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "不太够"
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "挺够的"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "光自己玩就爽翻天"
       }
     },
     "effectsByValue": {
@@ -182,30 +182,30 @@
       "mind_body_orientation"
     ],
     "prompt": {
-      "conservative": "【待填写】强关联交叉题 8：围绕「性欲强度 × 精神肉体倾向」的场景题。",
-      "direct": "【待填写】强关联交叉题 8：欲望强度 × 精神/肉体倾向。"
+      "conservative": "即使性欲很强烈，如果没有深层的情感连接或心理共鸣，我也会觉得这次体验不够完整。",
+      "direct": "即使我欲火焚身，如果心里没感觉、没有情感连接，我还是觉得这次操得空虚没意思。"
     },
-    "authoringNote": "强关联交叉题 2：性欲强度 × 精神肉体倾向。",
+    "authoringNote": "强关联交叉题 8：性欲强度 × 精神肉体倾向（高欲时的情感缺失场景）。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "完全没关系"
       },
       "2": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "不太需要感情"
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "挺需要感情"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "没感情根本没意思"
       }
     },
     "effectsByValue": {
