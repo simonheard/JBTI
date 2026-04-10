@@ -6,47 +6,47 @@
       "mind_body_orientation"
     ],
     "prompt": {
-      "conservative": "【待填写】围绕「精神肉体倾向」的纯自身题 1。",
-      "direct": "【待填写】精神/肉体题 1。"
+      "conservative": "即使对方没有太多情感交流，我也能通过单纯的身体接触和感官刺激获得强烈的满足。",
+      "direct": "就算对方不说话、不调情，我也能靠单纯的操、摸、插等身体刺激爽到高潮。"
     },
-    "authoringNote": "纯自身题 1：仅服务于「精神肉体倾向」。",
+    "authoringNote": "纯自身题 1：仅服务于「精神肉体倾向」。重点在「纯肉体快感是否足够」。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "没感情我根本爽不起来"
       },
       "2": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "没感情爽得不够过瘾"
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "光操就很爽"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "光用身体就能把我操到喷"
       }
     },
     "effectsByValue": {
       "1": {
-        "mind_body_orientation": 0
+        "mind_body_orientation": 5
       },
       "2": {
-        "mind_body_orientation": 1.25
+        "mind_body_orientation": 3.75
       },
       "3": {
         "mind_body_orientation": 2.5
       },
       "4": {
-        "mind_body_orientation": 3.75
+        "mind_body_orientation": 1.25
       },
       "5": {
-        "mind_body_orientation": 5
+        "mind_body_orientation": 0
       }
     }
   },
@@ -57,30 +57,30 @@
       "mind_body_orientation"
     ],
     "prompt": {
-      "conservative": "【待填写】围绕「精神肉体倾向」的纯自身题 2。",
-      "direct": "【待填写】精神/肉体题 2。"
+      "conservative": "如果没有深层的情感连接或心理上的共鸣，我很难真正投入并获得满足。",
+      "direct": "没有强烈的心理连接和情感互动，我根本硬不起来，也爽不起来。"
     },
-    "authoringNote": "纯自身题 2：仅服务于「精神肉体倾向」。",
+    "authoringNote": "纯自身题 2：仅服务于「精神肉体倾向」。重点在「精神连接是否必要」。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "没感情我也能硬起来"
       },
       "2": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "没感情也能爽"
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "没感情我很难真正爽"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "没感情我根本操不动"
       }
     },
     "effectsByValue": {
@@ -108,47 +108,47 @@
       "mind_body_orientation"
     ],
     "prompt": {
-      "conservative": "【待填写】围绕「精神肉体倾向」的纯自身题 3。",
-      "direct": "【待填写】精神/肉体题 3。"
+      "conservative": "我更享受纯粹的身体感官刺激，比如触碰、节奏和身体反应，而不需要太多言语或情感交流。",
+      "direct": "我更喜欢单纯被操、被摸、被插到爽翻天，不需要对方说情话或搞什么心理互动。"
     },
-    "authoringNote": "纯自身题 3：仅服务于「精神肉体倾向」。",
+    "authoringNote": "纯自身题 3：仅服务于「精神肉体倾向」。重点在「感官 vs 情感优先」。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "没情话我根本没感觉"
       },
       "2": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "没情话爽得不够"
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "不说话也挺爽"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "只要被操爽就够了"
       }
     },
     "effectsByValue": {
       "1": {
-        "mind_body_orientation": 0
+        "mind_body_orientation": 5
       },
       "2": {
-        "mind_body_orientation": 1.25
+        "mind_body_orientation": 3.75
       },
       "3": {
         "mind_body_orientation": 2.5
       },
       "4": {
-        "mind_body_orientation": 3.75
+        "mind_body_orientation": 1.25
       },
       "5": {
-        "mind_body_orientation": 5
+        "mind_body_orientation": 0
       }
     }
   },
@@ -159,30 +159,30 @@
       "mind_body_orientation"
     ],
     "prompt": {
-      "conservative": "【待填写】围绕「精神肉体倾向」的纯自身题 4。",
-      "direct": "【待填写】精神/肉体题 4。"
+      "conservative": "即使身体反应很强烈，如果缺少情感上的亲密感和心理共鸣，我也会觉得这次体验不够完整。",
+      "direct": "就算身体被操得喷水、高潮连连，如果心里没感觉，我还是觉得这次操得没意思。"
     },
-    "authoringNote": "纯自身题 4：仅服务于「精神肉体倾向」。",
+    "authoringNote": "纯自身题 4：仅服务于「精神肉体倾向」。重点在「情感缺失时的满足度」。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "光操爽就够了"
       },
       "2": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "没感情也还能接受"
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "心里没感觉就觉得空"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "没感情我根本觉得没意思"
       }
     },
     "effectsByValue": {

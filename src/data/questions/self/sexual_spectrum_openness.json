@@ -6,30 +6,30 @@
       "sexual_spectrum_openness"
     ],
     "prompt": {
-      "conservative": "【待填写】围绕「性谱系开放度」的纯自身题 1。",
-      "direct": "【待填写】谱系开放度题 1。"
+      "conservative": "我对不同性别、性取向或身份的伴侣，都能保持开放的态度并产生兴趣。",
+      "direct": "不管对方是男是女、跨性别还是什么奇怪身份，我都很容易硬起来想操，或者被对方操。"
     },
-    "authoringNote": "纯自身题 1：仅服务于「性谱系开放度」。",
+    "authoringNote": "纯自身题 1：仅服务于「性谱系开放度」。重点在性别/身份开放度。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "完全不想操其他类型"
       },
       "2": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "不太想试别的性别"
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "挺想操各种人"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "超想操任何性别任何身份"
       }
     },
     "effectsByValue": {
@@ -57,30 +57,30 @@
       "sexual_spectrum_openness"
     ],
     "prompt": {
-      "conservative": "【待填写】围绕「性谱系开放度」的纯自身题 2。",
-      "direct": "【待填写】谱系开放度题 2。"
+      "conservative": "我愿意尝试一些比较特别的性爱方式或角色扮演，即使这些方式不算主流。",
+      "direct": "我愿意尝试BDSM、捆绑、羞辱、道具、甚至被当成性玩具玩弄的各种玩法。"
     },
-    "authoringNote": "纯自身题 2：仅服务于「性谱系开放度」。",
+    "authoringNote": "纯自身题 2：仅服务于「性谱系开放度」。重点在中度特殊性癖开放度。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "完全不想玩这些"
       },
       "2": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "不太想被这么玩"
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "挺想被绑起来操"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "超想被各种变态玩法操"
       }
     },
     "effectsByValue": {
@@ -108,30 +108,30 @@
       "sexual_spectrum_openness"
     ],
     "prompt": {
-      "conservative": "【待填写】围绕「性谱系开放度」的纯自身题 3。",
-      "direct": "【待填写】谱系开放度题 3。"
+      "conservative": "我对一些在社会中被视为禁忌的亲密幻想场景，也能保持一定程度的开放和好奇。",
+      "direct": "我对乱伦、血亲、父母兄弟姐妹之类的禁忌幻想，也能接受甚至觉得特别刺激。"
     },
-    "authoringNote": "纯自身题 3：仅服务于「性谱系开放度」。",
+    "authoringNote": "纯自身题 3：仅服务于「性谱系开放度」。重点在重口禁忌幻想开放度。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "完全不想碰乱伦"
       },
       "2": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "不太想试乱伦幻想"
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "挺想试乱伦"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "超想被家人操到喷"
       }
     },
     "effectsByValue": {
@@ -159,30 +159,30 @@
       "sexual_spectrum_openness"
     ],
     "prompt": {
-      "conservative": "【待填写】围绕「性谱系开放度」的纯自身题 4。",
-      "direct": "【待填写】谱系开放度题 4。"
+      "conservative": "我对一些极度不寻常、甚至被大多数人视为极端禁忌的性幻想内容，也能保持开放的态度。",
+      "direct": "我对人兽、被动物操、极端重口之类的禁忌幻想，也能接受甚至觉得特别兴奋。"
     },
-    "authoringNote": "纯自身题 4：仅服务于「性谱系开放度」。",
+    "authoringNote": "纯自身题 4：仅服务于「性谱系开放度」。重点在极端重口禁忌开放度。",
     "optionLabelsByValue": {
       "1": {
         "conservative": "完全不符合",
-        "direct": "完全不像"
+        "direct": "完全不想碰人兽"
       },
       "2": {
         "conservative": "较不符合",
-        "direct": "不太像"
+        "direct": "不太想试重口"
       },
       "3": {
         "conservative": "一般",
-        "direct": "一般"
+        "direct": "一般般"
       },
       "4": {
         "conservative": "较符合",
-        "direct": "比较像"
+        "direct": "挺想试人兽"
       },
       "5": {
         "conservative": "完全符合",
-        "direct": "非常像"
+        "direct": "超想被狗操到喷"
       }
     },
     "effectsByValue": {
