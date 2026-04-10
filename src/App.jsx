@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import {
+  Alert,
   Box,
   Button,
   Chip,
@@ -23,11 +24,13 @@ import {
   QUESTIONS,
   UI_COPY,
   createQuestionOrder,
+  loadResultPreset,
 } from './data/jbti.js';
 import { getAppTheme } from './theme.js';
 import { calculateResult } from './utils/scoring.js';
 
 const QUESTIONS_PER_PAGE = 10;
+const IS_DEV = import.meta.env.DEV;
 
 function GlassCard({ children, sx }) {
   return (
@@ -39,6 +42,55 @@ function GlassCard({ children, sx }) {
       }}
     >
       {children}
+    </Paper>
+  );
+}
+
+function DebugStageSwitcher({ stage, onChange }) {
+  if (!IS_DEV) {
+    return null;
+  }
+
+  return (
+    <Paper
+      sx={{
+        position: 'sticky',
+        top: 12,
+        zIndex: 30,
+        px: 1.5,
+        py: 1.25,
+        bgcolor: 'rgba(255,255,255,0.86)',
+      }}
+    >
+      <Stack
+        direction={{ xs: 'column', md: 'row' }}
+        spacing={1.5}
+        alignItems={{ xs: 'stretch', md: 'center' }}
+        justifyContent="space-between"
+      >
+        <Typography variant="body2" fontWeight={700}>
+          Debug Stage
+        </Typography>
+        <ToggleButtonGroup
+          exclusive
+          size="small"
+          value={stage}
+          onChange={(_, nextStage) => {
+            if (nextStage) {
+              onChange(nextStage);
+            }
+          }}
+          sx={{
+            '& .MuiToggleButtonGroup-grouped': {
+              borderRadius: '999px !important',
+            },
+          }}
+        >
+          <ToggleButton value="home">首页</ToggleButton>
+          <ToggleButton value="test">题目页</ToggleButton>
+          <ToggleButton value="result">结果页</ToggleButton>
+        </ToggleButtonGroup>
+      </Stack>
     </Paper>
   );
 }
@@ -98,6 +150,20 @@ function HeroPage({ mode, setMode, onStart }) {
           </Paper>
         ))}
       </Stack>
+
+      <GlassCard sx={{ p: 2.25 }}>
+        <Stack spacing={1}>
+          <Typography variant="subtitle1" fontWeight={700}>
+            {UI_COPY.projectNoticeTitle[mode]}
+          </Typography>
+          <Typography variant="body2" color="text.secondary" sx={{ lineHeight: 1.8 }}>
+            {UI_COPY.projectNotice[mode]}
+          </Typography>
+          <Typography variant="body2" color="secondary.main" fontWeight={700}>
+            {UI_COPY.pageDisclaimer[mode]}
+          </Typography>
+        </Stack>
+      </GlassCard>
     </Stack>
   );
 }
@@ -252,7 +318,19 @@ function TestPage({
   );
 }
 
-function ResultPage({ mode, setMode, result, onRestart }) {
+function ResultPage({ mode, setMode, result, preset, loading, error, onRestart }) {
+  const resultName = preset?.name?.[mode] ?? (loading ? '结果加载中' : '结果未命中');
+  const resultSummary =
+    preset?.summary?.[mode] ??
+    (loading
+      ? mode === 'conservative'
+        ? '正在加载当前代码对应的结果文案。'
+        : '正在加载这组代码对应的结果说明。'
+      : mode === 'conservative'
+        ? '当前代码没有找到对应结果文案，请检查结果配置。'
+        : '这组代码还没配到对应结果文案。');
+  const resultIllustration = preset?.illustrationUrl ?? '/illustrations/balanced-spectrum.svg';
+
   return (
     <Stack spacing={3}>
       <GlassCard>
@@ -270,7 +348,7 @@ function ResultPage({ mode, setMode, result, onRestart }) {
               {result.code}
             </Typography>
             <Typography variant="h6" color="secondary.main" fontWeight={700}>
-              {result.name}
+              {resultName}
             </Typography>
           </Box>
 
@@ -291,7 +369,7 @@ function ResultPage({ mode, setMode, result, onRestart }) {
         <Stack spacing={1.25}>
           <Typography variant="h5">{UI_COPY.resultSummaryTitle[mode]}</Typography>
           <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
-            {result.summary}
+            {resultSummary}
           </Typography>
         </Stack>
       </GlassCard>
@@ -306,8 +384,8 @@ function ResultPage({ mode, setMode, result, onRestart }) {
           </Box>
           <CardMedia
             component="img"
-            image={result.illustrationUrl}
-            alt={result.name}
+            image={resultIllustration}
+            alt={resultName}
             sx={{
               borderRadius: 4,
               border: '1px solid rgba(60,60,60,0.08)',
@@ -316,6 +394,14 @@ function ResultPage({ mode, setMode, result, onRestart }) {
           />
         </Stack>
       </GlassCard>
+
+      {error && (
+        <Alert severity="warning">
+          {mode === 'conservative'
+            ? '结果文案加载失败，当前仍会显示代码与维度结果。请检查结果 JSON。'
+            : '结果文案没加载出来，但代码和维度分数还在。去检查结果 JSON。'}
+        </Alert>
+      )}
 
       <Stack spacing={2}>
         {result.dimensions.map((dimension) => (
@@ -340,9 +426,14 @@ function ResultPage({ mode, setMode, result, onRestart }) {
           alignItems={{ xs: 'stretch', sm: 'center' }}
           justifyContent="space-between"
         >
-          <Typography variant="body2" color="text.secondary" sx={{ maxWidth: 720 }}>
-            {DISCLAIMER[mode]}
-          </Typography>
+          <Stack spacing={0.75} sx={{ maxWidth: 720 }}>
+            <Typography variant="body2" color="secondary.main" fontWeight={700}>
+              {UI_COPY.pageDisclaimer[mode]}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              {DISCLAIMER[mode]}
+            </Typography>
+          </Stack>
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={1.5}>
             <Button
               variant="outlined"
@@ -372,12 +463,53 @@ export default function App() {
   const [page, setPage] = useState(0);
   const [answers, setAnswers] = useState({});
   const [orderedQuestions, setOrderedQuestions] = useState(QUESTIONS);
+  const [resultPreset, setResultPreset] = useState(null);
+  const [resultLoading, setResultLoading] = useState(false);
+  const [resultError, setResultError] = useState(null);
 
   const result = useMemo(() => calculateResult(answers, mode), [answers, mode]);
+
+  function createDebugAnswers() {
+    return Object.fromEntries(QUESTIONS.map((question) => [question.id, 3]));
+  }
 
   useEffect(() => {
     document.title = `JBTI 人格测试系统 · ${MODES[mode].label}`;
   }, [mode]);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    if (stage !== 'result') {
+      return undefined;
+    }
+
+    setResultLoading(true);
+    setResultError(null);
+
+    loadResultPreset(result.code)
+      .then((preset) => {
+        if (cancelled) {
+          return;
+        }
+
+        setResultPreset(preset);
+        setResultLoading(false);
+      })
+      .catch((error) => {
+        if (cancelled) {
+          return;
+        }
+
+        setResultPreset(null);
+        setResultError(error);
+        setResultLoading(false);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [stage, result.code]);
 
   return (
     <ThemeProvider theme={getAppTheme(mode)}>
@@ -393,6 +525,30 @@ export default function App() {
       >
         <Container maxWidth="lg">
           <Stack spacing={3}>
+            <DebugStageSwitcher
+              stage={stage}
+              onChange={(nextStage) => {
+                if (nextStage === 'test' || nextStage === 'result') {
+                  setOrderedQuestions((current) =>
+                    current.length === QUESTIONS.length ? current : createQuestionOrder()
+                  );
+                }
+
+                if (nextStage === 'result' && Object.keys(answers).length < QUESTIONS.length) {
+                  setAnswers(createDebugAnswers());
+                }
+
+                if (nextStage === 'home') {
+                  setResultPreset(null);
+                  setResultError(null);
+                  setResultLoading(false);
+                }
+
+                setPage(0);
+                setStage(nextStage);
+              }}
+            />
+
             <GlassCard
               sx={{
                 background:
@@ -441,7 +597,11 @@ export default function App() {
                 page={page}
                 setPage={setPage}
                 orderedQuestions={orderedQuestions}
-                onSubmit={() => setStage('result')}
+                onSubmit={() => {
+                  setResultPreset(null);
+                  setResultError(null);
+                  setStage('result');
+                }}
               />
             )}
 
@@ -450,10 +610,16 @@ export default function App() {
                 mode={mode}
                 setMode={setMode}
                 result={result}
+                preset={resultPreset}
+                loading={resultLoading}
+                error={resultError}
                 onRestart={() => {
                   setAnswers({});
                   setPage(0);
                   setOrderedQuestions(createQuestionOrder());
+                  setResultPreset(null);
+                  setResultError(null);
+                  setResultLoading(false);
                   setStage('home');
                 }}
               />

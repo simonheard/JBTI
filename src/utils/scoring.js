@@ -2,7 +2,6 @@ import {
   DIMENSIONS,
   QUESTION_MAP,
   QUESTIONS,
-  RESULT_PRESETS,
 } from '../data/jbti.js';
 
 function clampPercent(score, min, max) {
@@ -74,13 +73,8 @@ export function calculateResult(answers, mode) {
   });
 
   const code = dimensions.map((item) => item.letter).join('');
-  const matched = RESULT_PRESETS[code];
-
   return {
     code,
-    name: matched.name[mode],
-    summary: matched.summary[mode],
-    illustrationUrl: matched.illustrationUrl,
     dimensions,
     completionRate: Math.round(
       (Object.keys(answers).length / Object.keys(QUESTION_MAP).length) * 100

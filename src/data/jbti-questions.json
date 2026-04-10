@@ -12,6 +12,28 @@
       "direct": "【待填写】交叉题 1：欲望强度 × 烈度开放度。"
     },
     "authoringNote": "强关联交叉题 1：性欲强度 × 性烈度开放度。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "sexual_desire_intensity": 0,
@@ -48,6 +70,28 @@
       "direct": "【待填写】交叉题 10：精神/肉体倾向 × 关系开放度。"
     },
     "authoringNote": "弱关联交叉题：精神肉体倾向 × 关系开放度。该题用于补齐共享结构，可按需要替换为更合适的弱关联组合。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "mind_body_orientation": 0,
@@ -84,6 +128,28 @@
       "direct": "【待填写】交叉题 11：权力动态倾向 × 关系开放度。"
     },
     "authoringNote": "弱关联交叉题：权力动态倾向 × 关系开放度。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "power_dynamic_tendency": 0,
@@ -120,6 +186,28 @@
       "direct": "【待填写】交叉题 12：谱系开放度 × 精神/肉体倾向。"
     },
     "authoringNote": "弱关联交叉题：性谱系开放度 × 精神肉体倾向。该题用于补齐共享结构，可按需要替换为更合适的弱关联组合。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "sexual_spectrum_openness": 0,
@@ -156,6 +244,28 @@
       "direct": "【待填写】交叉题 2：欲望强度 × 烈度开放度。"
     },
     "authoringNote": "强关联交叉题 2：性欲强度 × 性烈度开放度。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "sexual_desire_intensity": 0,
@@ -192,6 +302,28 @@
       "direct": "【待填写】交叉题 3：谱系开放度 × 关系开放度。"
     },
     "authoringNote": "强关联交叉题 1：性谱系开放度 × 关系开放度。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "sexual_spectrum_openness": 0,
@@ -228,6 +360,28 @@
       "direct": "【待填写】交叉题 4：谱系开放度 × 关系开放度。"
     },
     "authoringNote": "强关联交叉题 2：性谱系开放度 × 关系开放度。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "sexual_spectrum_openness": 0,
@@ -264,6 +418,28 @@
       "direct": "【待填写】交叉题 5：烈度开放度 × 权力动态倾向。"
     },
     "authoringNote": "强关联交叉题 1：性烈度开放度 × 权力动态倾向。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "intensity_openness": 0,
@@ -300,6 +476,28 @@
       "direct": "【待填写】交叉题 6：烈度开放度 × 权力动态倾向。"
     },
     "authoringNote": "强关联交叉题 2：性烈度开放度 × 权力动态倾向。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "intensity_openness": 0,
@@ -336,6 +534,28 @@
       "direct": "【待填写】交叉题 7：欲望强度 × 精神/肉体倾向。"
     },
     "authoringNote": "强关联交叉题 1：性欲强度 × 精神肉体倾向。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "sexual_desire_intensity": 0,
@@ -372,6 +592,28 @@
       "direct": "【待填写】交叉题 8：欲望强度 × 精神/肉体倾向。"
     },
     "authoringNote": "强关联交叉题 2：性欲强度 × 精神肉体倾向。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "sexual_desire_intensity": 0,
@@ -408,6 +650,28 @@
       "direct": "【待填写】交叉题 9：谱系开放度 × 权力动态倾向。"
     },
     "authoringNote": "弱关联交叉题：性谱系开放度 × 权力动态倾向。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "sexual_spectrum_openness": 0,
@@ -442,6 +706,28 @@
       "direct": "【待填写】烈度开放度题 1。"
     },
     "authoringNote": "纯自身题 1：仅服务于「性烈度开放度」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "intensity_openness": 0
@@ -471,6 +757,28 @@
       "direct": "【待填写】烈度开放度题 2。"
     },
     "authoringNote": "纯自身题 2：仅服务于「性烈度开放度」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "intensity_openness": 0
@@ -500,6 +808,28 @@
       "direct": "【待填写】烈度开放度题 3。"
     },
     "authoringNote": "纯自身题 3：仅服务于「性烈度开放度」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "intensity_openness": 0
@@ -529,6 +859,28 @@
       "direct": "【待填写】烈度开放度题 4。"
     },
     "authoringNote": "纯自身题 4：仅服务于「性烈度开放度」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "intensity_openness": 0
@@ -558,6 +910,28 @@
       "direct": "【待填写】精神/肉体题 1。"
     },
     "authoringNote": "纯自身题 1：仅服务于「精神肉体倾向」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "mind_body_orientation": 0
@@ -587,6 +961,28 @@
       "direct": "【待填写】精神/肉体题 2。"
     },
     "authoringNote": "纯自身题 2：仅服务于「精神肉体倾向」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "mind_body_orientation": 0
@@ -616,6 +1012,28 @@
       "direct": "【待填写】精神/肉体题 3。"
     },
     "authoringNote": "纯自身题 3：仅服务于「精神肉体倾向」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "mind_body_orientation": 0
@@ -645,6 +1063,28 @@
       "direct": "【待填写】精神/肉体题 4。"
     },
     "authoringNote": "纯自身题 4：仅服务于「精神肉体倾向」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "mind_body_orientation": 0
@@ -674,6 +1114,28 @@
       "direct": "【待填写】权力动态题 1。"
     },
     "authoringNote": "纯自身题 1：仅服务于「权力动态倾向」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "power_dynamic_tendency": 0
@@ -703,6 +1165,28 @@
       "direct": "【待填写】权力动态题 2。"
     },
     "authoringNote": "纯自身题 2：仅服务于「权力动态倾向」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "power_dynamic_tendency": 0
@@ -732,6 +1216,28 @@
       "direct": "【待填写】权力动态题 3。"
     },
     "authoringNote": "纯自身题 3：仅服务于「权力动态倾向」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "power_dynamic_tendency": 0
@@ -761,6 +1267,28 @@
       "direct": "【待填写】权力动态题 4。"
     },
     "authoringNote": "纯自身题 4：仅服务于「权力动态倾向」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "power_dynamic_tendency": 0
@@ -790,6 +1318,28 @@
       "direct": "【待填写】关系开放度题 1。"
     },
     "authoringNote": "纯自身题 1：仅服务于「关系开放度」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "relationship_openness": 0
@@ -819,6 +1369,28 @@
       "direct": "【待填写】关系开放度题 2。"
     },
     "authoringNote": "纯自身题 2：仅服务于「关系开放度」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "relationship_openness": 0
@@ -848,6 +1420,28 @@
       "direct": "【待填写】关系开放度题 3。"
     },
     "authoringNote": "纯自身题 3：仅服务于「关系开放度」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "relationship_openness": 0
@@ -877,6 +1471,28 @@
       "direct": "【待填写】关系开放度题 4。"
     },
     "authoringNote": "纯自身题 4：仅服务于「关系开放度」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "relationship_openness": 0
@@ -906,6 +1522,28 @@
       "direct": "【待填写】欲望强度题 1。"
     },
     "authoringNote": "纯自身题 1：仅服务于「性欲强度」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "sexual_desire_intensity": 0
@@ -935,6 +1573,28 @@
       "direct": "【待填写】欲望强度题 2。"
     },
     "authoringNote": "纯自身题 2：仅服务于「性欲强度」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "sexual_desire_intensity": 0
@@ -964,6 +1624,28 @@
       "direct": "【待填写】欲望强度题 3。"
     },
     "authoringNote": "纯自身题 3：仅服务于「性欲强度」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "sexual_desire_intensity": 0
@@ -993,6 +1675,28 @@
       "direct": "【待填写】欲望强度题 4。"
     },
     "authoringNote": "纯自身题 4：仅服务于「性欲强度」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "sexual_desire_intensity": 0
@@ -1022,6 +1726,28 @@
       "direct": "【待填写】谱系开放度题 1。"
     },
     "authoringNote": "纯自身题 1：仅服务于「性谱系开放度」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "sexual_spectrum_openness": 0
@@ -1051,6 +1777,28 @@
       "direct": "【待填写】谱系开放度题 2。"
     },
     "authoringNote": "纯自身题 2：仅服务于「性谱系开放度」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "sexual_spectrum_openness": 0
@@ -1080,6 +1828,28 @@
       "direct": "【待填写】谱系开放度题 3。"
     },
     "authoringNote": "纯自身题 3：仅服务于「性谱系开放度」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "sexual_spectrum_openness": 0
@@ -1109,6 +1879,28 @@
       "direct": "【待填写】谱系开放度题 4。"
     },
     "authoringNote": "纯自身题 4：仅服务于「性谱系开放度」。",
+    "optionLabelsByValue": {
+      "1": {
+        "conservative": "完全不符合",
+        "direct": "完全不像"
+      },
+      "2": {
+        "conservative": "较不符合",
+        "direct": "不太像"
+      },
+      "3": {
+        "conservative": "一般",
+        "direct": "一般"
+      },
+      "4": {
+        "conservative": "较符合",
+        "direct": "比较像"
+      },
+      "5": {
+        "conservative": "完全符合",
+        "direct": "非常像"
+      }
+    },
     "effectsByValue": {
       "1": {
         "sexual_spectrum_openness": 0

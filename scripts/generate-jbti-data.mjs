@@ -17,6 +17,29 @@ const levelLabelMap = {
   high: { conservative: '高', direct: '高' },
 };
 
+const defaultOptionLabels = {
+  '1': {
+    conservative: '完全不符合',
+    direct: '完全不像',
+  },
+  '2': {
+    conservative: '较不符合',
+    direct: '不太像',
+  },
+  '3': {
+    conservative: '一般',
+    direct: '一般',
+  },
+  '4': {
+    conservative: '较符合',
+    direct: '比较像',
+  },
+  '5': {
+    conservative: '完全符合',
+    direct: '非常像',
+  },
+};
+
 const dimensions = [
   {
     id: 'sexual_desire_intensity',
@@ -484,6 +507,7 @@ function buildSelfQuestions() {
       dimensions: [dimension.id],
       prompt: { conservative, direct },
       authoringNote: `纯自身题 ${index + 1}：仅服务于「${dimension.name.conservative}」。`,
+      optionLabelsByValue: defaultOptionLabels,
       effectsByValue: buildEffectsByValue({ [dimension.id]: 5 }),
     }))
   );
@@ -505,6 +529,7 @@ function buildCrossQuestions() {
         direct: `【待填写】交叉题 ${index + 1}：${left.name.direct} × ${right.name.direct}。`,
       },
       authoringNote: item.authoringNote,
+      optionLabelsByValue: defaultOptionLabels,
       effectsByValue: buildEffectsByValue({
         [leftId]: 2.5,
         [rightId]: 2.5,
