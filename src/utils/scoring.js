@@ -1,6 +1,5 @@
 import {
   DIMENSIONS,
-  FALLBACK_RESULTS,
   QUESTION_MAP,
   QUESTIONS,
   RESULT_PRESETS,
@@ -25,21 +24,6 @@ function resolveLevel(score, ranges) {
   }
 
   return 'high';
-}
-
-function resolveFallbackResult(dimensions, mode) {
-  const highCount = dimensions.filter((item) => item.level === 'high').length;
-  const lowCount = dimensions.filter((item) => item.level === 'low').length;
-
-  if (highCount >= 4) {
-    return FALLBACK_RESULTS.highDrive;
-  }
-
-  if (lowCount >= 4) {
-    return FALLBACK_RESULTS.lowWave;
-  }
-
-  return FALLBACK_RESULTS.balanced;
 }
 
 export function calculateResult(answers, mode) {
@@ -90,7 +74,7 @@ export function calculateResult(answers, mode) {
   });
 
   const code = dimensions.map((item) => item.letter).join('');
-  const matched = RESULT_PRESETS[code] ?? resolveFallbackResult(dimensions, mode);
+  const matched = RESULT_PRESETS[code];
 
   return {
     code,

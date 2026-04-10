@@ -1,41 +1,42 @@
 {
+  "authoringNote": "该文件只保留通用 UI 文案、量表选项和免责声明。维度、题目、结果已拆分到独立 JSON，便于人工维护。",
   "modes": {
     "conservative": {
       "id": "conservative",
       "label": "保守模式",
-      "helper": "语气温和、间接、适合第一次体验。"
+      "helper": "语气更温和、间接，适合第一次体验或后续细化文案。"
     },
     "direct": {
       "id": "direct",
       "label": "直白模式",
-      "helper": "语气更直接、信息更锐利、结果感更强。"
+      "helper": "语气更直接、清晰，适合做更明确的结果呈现。"
     }
   },
   "ui": {
     "heroBadge": {
-      "conservative": "JBTI · 六维人格光谱",
-      "direct": "JBTI · 六维人格拆解"
+      "conservative": "JBTI · 六维性人格光谱",
+      "direct": "JBTI · 六维性偏好拆解"
     },
     "heroTitle": {
-      "conservative": "用 36 道场景题，得到一份更像光谱而不是标签的人格画像。",
-      "direct": "36 道题，直接拆出你在六个核心维度上的真实倾向。"
+      "conservative": "通过 36 道题，形成一份关于性偏好结构的六维光谱画像。",
+      "direct": "36 道题，拆出你在欲望、开放度、权力和关系上的组合倾向。"
     },
     "heroDescription": {
-      "conservative": "这是一个纯前端静态版骨架，已经接好双模式文案、分页答题、即时计分、六维雷达图和结果解释。后续只需要替换配置 JSON，就能继续迭代正式版本。",
-      "direct": "这版已经把模式切换、随机题序、分页答题、计分、雷达图和结果解释全接好了。后续主要就是继续往 JSON 里填正式题库和结果文案。"
+      "conservative": "当前版本已支持双模式切换、随机题序、分页答题、计分、结果总结和插画位。正式文案可以继续在拆分后的 JSON 中手动填充。",
+      "direct": "这一版重点是把结构搭干净：模式切换、随机出题、结果页、JSON 配置都已经接好，后面主要是继续填正式内容。"
     },
     "heroBadges": {
       "conservative": [
-        "36 题固定结构，8-11 分钟完成",
+        "36 题固定结构，每次开始随机排序",
         "6 个核心维度，输出 6 字母代码",
-        "支持随时切换保守 / 直白模式",
-        "本地计算，不默认保存用户答案"
+        "支持保守 / 直白两套文案",
+        "所有内容均可在 JSON 中继续人工填充"
       ],
       "direct": [
         "36 题随机出题顺序",
-        "6 个维度直接出代码和雷达图",
-        "中途切模式，题目和结果一起切",
-        "纯前端本地计算，不落库"
+        "6 维结果直接出代码和雷达图",
+        "双模式文案已经拆开",
+        "题库和结果都能直接手改 JSON"
       ]
     },
     "startButton": {
@@ -47,8 +48,8 @@
       "direct": "JBTI 作答页"
     },
     "testHint": {
-      "conservative": "你可以中途切换模式，题目与结果会同步刷新，已选答案不会丢失。",
-      "direct": "模式可以随时切，文案和结果会立刻跟着换，答案不会掉。"
+      "conservative": "你可以中途切换模式，题目与结果文案会同步刷新，已选答案不会丢失。",
+      "direct": "模式随时能切，文案和结果会一起变，答案不会掉。"
     },
     "resultCodeLabel": {
       "conservative": "JBTI 最终人格代码",
@@ -63,8 +64,8 @@
       "direct": "人格插画"
     },
     "resultIllustrationDescription": {
-      "conservative": "这是当前结果对应的视觉占位插画，后续可直接替换成正式素材链接。",
-      "direct": "这里已经接好了插画位，后面换成你自己的正式图链接就行。"
+      "conservative": "结果插画已预留正式素材位，可继续按代码逐条替换为更精准的视觉资源。",
+      "direct": "这里已经预留好插画位，后面直接换成正式图就行。"
     },
     "shareButton": {
       "conservative": "分享结果",
@@ -112,607 +113,8 @@
       }
     }
   ],
-  "dimensions": [
-    {
-      "id": "adaptation",
-      "order": 1,
-      "name": {
-        "conservative": "环境适配",
-        "direct": "环境拿捏"
-      },
-      "codeLevels": {
-        "low": "A",
-        "medium": "M",
-        "high": "V"
-      },
-      "scoreRanges": {
-        "low": [0, 44],
-        "medium": [45, 69],
-        "high": [70, 100]
-      },
-      "descriptions": {
-        "conservative": {
-          "low": "你更依赖熟悉节奏，面对变化时需要更充分的缓冲与准备。",
-          "medium": "你能在稳定与调整之间找到平衡，既不僵化也不过度冒进。",
-          "high": "你适应新局面的速度很快，常能在变化中主动重组资源与节奏。"
-        },
-        "direct": {
-          "low": "你不喜欢被临时打乱，陌生局面会明显拉高你的心理成本。",
-          "medium": "你能切换状态，但通常会先判断值不值得再投入调整。",
-          "high": "你对变化上手很快，乱局里也能迅速找出能用的办法。"
-        }
-      }
-    },
-    {
-      "id": "decision",
-      "order": 2,
-      "name": {
-        "conservative": "决策取向",
-        "direct": "拍板方式"
-      },
-      "codeLevels": {
-        "low": "R",
-        "medium": "K",
-        "high": "D"
-      },
-      "scoreRanges": {
-        "low": [0, 44],
-        "medium": [45, 69],
-        "high": [70, 100]
-      },
-      "descriptions": {
-        "conservative": {
-          "low": "你决策前会保留更多观察时间，偏好降低误判风险。",
-          "medium": "你会综合信息与时机，在谨慎和效率之间保持平衡。",
-          "high": "你在信息不完全时也能推动决定，行动阈值相对较低。"
-        },
-        "direct": {
-          "low": "你不轻易拍板，没想清楚之前很难被催着往前走。",
-          "medium": "你会权衡利弊，通常能在拖延和冲动之间卡住一个合适点。",
-          "high": "你能快速定方向，不会长期困在反复比较里。"
-        }
-      }
-    },
-    {
-      "id": "boundary",
-      "order": 3,
-      "name": {
-        "conservative": "边界表达",
-        "direct": "界限硬度"
-      },
-      "codeLevels": {
-        "low": "S",
-        "medium": "L",
-        "high": "X"
-      },
-      "scoreRanges": {
-        "low": [0, 44],
-        "medium": [45, 69],
-        "high": [70, 100]
-      },
-      "descriptions": {
-        "conservative": {
-          "low": "你倾向先照顾整体氛围，表达拒绝时会保留缓冲空间。",
-          "medium": "你能视关系和情境调整边界表达，不失柔和也不失原则。",
-          "high": "你对个人边界有清晰意识，表达时通常较直接明确。"
-        },
-        "direct": {
-          "low": "你不太爱正面拒绝，很多时候会先忍一下再说。",
-          "medium": "你会看人看场合，必要时能守住线，但不一定一开始就强硬。",
-          "high": "你边界感强，不合适就会直接说，不太会硬撑。"
-        }
-      }
-    },
-    {
-      "id": "drive",
-      "order": 4,
-      "name": {
-        "conservative": "行动驱动",
-        "direct": "推进力度"
-      },
-      "codeLevels": {
-        "low": "P",
-        "medium": "G",
-        "high": "T"
-      },
-      "scoreRanges": {
-        "low": [0, 44],
-        "medium": [45, 69],
-        "high": [70, 100]
-      },
-      "descriptions": {
-        "conservative": {
-          "low": "你更适合在清晰边界和明确外部支持下推进任务。",
-          "medium": "你能根据目标和压力动态分配精力，节奏较稳。",
-          "high": "你自带较强推进感，容易主动发起、追踪并完成事项。"
-        },
-        "direct": {
-          "low": "没人推的时候你更容易慢下来，需要明确结构才容易动起来。",
-          "medium": "你有推进力，但通常会把劲用在自己认可的事情上。",
-          "high": "你很能推事，想做就会自己把局面往前拱。"
-        }
-      }
-    },
-    {
-      "id": "sensitivity",
-      "order": 5,
-      "name": {
-        "conservative": "信息敏感",
-        "direct": "感知锐度"
-      },
-      "codeLevels": {
-        "low": "H",
-        "medium": "Q",
-        "high": "N"
-      },
-      "scoreRanges": {
-        "low": [0, 44],
-        "medium": [45, 69],
-        "high": [70, 100]
-      },
-      "descriptions": {
-        "conservative": {
-          "low": "你更关注明确线索，对隐含情绪和细节变化的捕捉相对克制。",
-          "medium": "你能察觉环境变化，但通常会筛选哪些信息值得放大处理。",
-          "high": "你对情境气氛和细节偏差较敏锐，能较早感知潜在变化。"
-        },
-        "direct": {
-          "low": "你不会过度解读空气，更多只处理看得见、说得明的信息。",
-          "medium": "你能感到变化，但不会每个细节都往心里放。",
-          "high": "你很会捕捉气氛、情绪和微小异常，反应通常比别人更早。"
-        }
-      }
-    },
-    {
-      "id": "reflection",
-      "order": 6,
-      "name": {
-        "conservative": "反思深度",
-        "direct": "内省强度"
-      },
-      "codeLevels": {
-        "low": "C",
-        "medium": "Y",
-        "high": "Z"
-      },
-      "scoreRanges": {
-        "low": [0, 44],
-        "medium": [45, 69],
-        "high": [70, 100]
-      },
-      "descriptions": {
-        "conservative": {
-          "low": "你倾向在行动中校正，而不是长时间回溯和反复推演。",
-          "medium": "你会适度复盘，从体验中提炼经验，但不过度沉浸。",
-          "high": "你有较强的内省倾向，习惯从感受、动机和模式中寻找解释。"
-        },
-        "direct": {
-          "low": "你不太纠结过去，更愿意边做边修，不会一直反刍。",
-          "medium": "你会复盘，但通常点到为止，不会把自己困进去。",
-          "high": "你很会往里看，很多事都会自动追问原因和模式。"
-        }
-      }
-    }
-  ],
-  "questions": [
-    {
-      "id": "adaptation-self-1",
-      "type": "self",
-      "dimensions": ["adaptation"],
-      "prompt": {
-        "conservative": "临时调整计划时，你通常能在短时间内重新进入状态。",
-        "direct": "计划一乱你也能很快接住，不会卡太久。"
-      },
-      "effectsByValue": { "1": { "adaptation": 0 }, "2": { "adaptation": 1.25 }, "3": { "adaptation": 2.5 }, "4": { "adaptation": 3.75 }, "5": { "adaptation": 5 } }
-    },
-    {
-      "id": "adaptation-self-2",
-      "type": "self",
-      "dimensions": ["adaptation"],
-      "prompt": {
-        "conservative": "面对陌生流程，你往往先观察规律，再逐步找到适合自己的方式。",
-        "direct": "碰到新规则时，你通常能很快摸出怎么搞最顺手。"
-      },
-      "effectsByValue": { "1": { "adaptation": 0 }, "2": { "adaptation": 1.25 }, "3": { "adaptation": 2.5 }, "4": { "adaptation": 3.75 }, "5": { "adaptation": 5 } }
-    },
-    {
-      "id": "adaptation-self-3",
-      "type": "self",
-      "dimensions": ["adaptation"],
-      "prompt": {
-        "conservative": "外部环境变化较大时，你仍能维持基本节奏与效率。",
-        "direct": "外界再乱，你也大多能把自己的节奏撑住。"
-      },
-      "effectsByValue": { "1": { "adaptation": 0 }, "2": { "adaptation": 1.25 }, "3": { "adaptation": 2.5 }, "4": { "adaptation": 3.75 }, "5": { "adaptation": 5 } }
-    },
-    {
-      "id": "adaptation-self-4",
-      "type": "self",
-      "dimensions": ["adaptation"],
-      "prompt": {
-        "conservative": "如果原定方案失效，你会较自然地转向替代路径。",
-        "direct": "原方案废了，你通常能马上换路继续走。"
-      },
-      "effectsByValue": { "1": { "adaptation": 0 }, "2": { "adaptation": 1.25 }, "3": { "adaptation": 2.5 }, "4": { "adaptation": 3.75 }, "5": { "adaptation": 5 } }
-    },
-    {
-      "id": "decision-self-1",
-      "type": "self",
-      "dimensions": ["decision"],
-      "prompt": {
-        "conservative": "在信息尚未完全齐备时，你也能做出阶段性判断。",
-        "direct": "材料没全时，你也能先拍一个能推进的决定。"
-      },
-      "effectsByValue": { "1": { "decision": 0 }, "2": { "decision": 1.25 }, "3": { "decision": 2.5 }, "4": { "decision": 3.75 }, "5": { "decision": 5 } }
-    },
-    {
-      "id": "decision-self-2",
-      "type": "self",
-      "dimensions": ["decision"],
-      "prompt": {
-        "conservative": "面对多个可选方向时，你通常能较快收敛重点。",
-        "direct": "选项一多，你也能很快判断先走哪条。"
-      },
-      "effectsByValue": { "1": { "decision": 0 }, "2": { "decision": 1.25 }, "3": { "decision": 2.5 }, "4": { "decision": 3.75 }, "5": { "decision": 5 } }
-    },
-    {
-      "id": "decision-self-3",
-      "type": "self",
-      "dimensions": ["decision"],
-      "prompt": {
-        "conservative": "你做决定时，往往更关注是否可执行，而不只停留在设想层面。",
-        "direct": "你做选择时更看能不能落地，不爱空想半天。"
-      },
-      "effectsByValue": { "1": { "decision": 0 }, "2": { "decision": 1.25 }, "3": { "decision": 2.5 }, "4": { "decision": 3.75 }, "5": { "decision": 5 } }
-    },
-    {
-      "id": "decision-self-4",
-      "type": "self",
-      "dimensions": ["decision"],
-      "prompt": {
-        "conservative": "被要求给出明确意见时，你较少长期维持模糊立场。",
-        "direct": "别人要你表态时，你一般不会一直含糊。"
-      },
-      "effectsByValue": { "1": { "decision": 0 }, "2": { "decision": 1.25 }, "3": { "decision": 2.5 }, "4": { "decision": 3.75 }, "5": { "decision": 5 } }
-    },
-    {
-      "id": "boundary-self-1",
-      "type": "self",
-      "dimensions": ["boundary"],
-      "prompt": {
-        "conservative": "当安排明显超出你的承受范围时，你会尝试表达限制。",
-        "direct": "事情压得太过分时，你通常会说出自己的线。"
-      },
-      "effectsByValue": { "1": { "boundary": 0 }, "2": { "boundary": 1.25 }, "3": { "boundary": 2.5 }, "4": { "boundary": 3.75 }, "5": { "boundary": 5 } }
-    },
-    {
-      "id": "boundary-self-2",
-      "type": "self",
-      "dimensions": ["boundary"],
-      "prompt": {
-        "conservative": "对于不合理的额外请求，你并不总是默认接受。",
-        "direct": "别人临时加码时，你不会习惯性全盘接下。"
-      },
-      "effectsByValue": { "1": { "boundary": 0 }, "2": { "boundary": 1.25 }, "3": { "boundary": 2.5 }, "4": { "boundary": 3.75 }, "5": { "boundary": 5 } }
-    },
-    {
-      "id": "boundary-self-3",
-      "type": "self",
-      "dimensions": ["boundary"],
-      "prompt": {
-        "conservative": "在合作中，你会留意自己的时间和精力是否被过度占用。",
-        "direct": "合作里你会盯住自己有没有被一直透支。"
-      },
-      "effectsByValue": { "1": { "boundary": 0 }, "2": { "boundary": 1.25 }, "3": { "boundary": 2.5 }, "4": { "boundary": 3.75 }, "5": { "boundary": 5 } }
-    },
-    {
-      "id": "boundary-self-4",
-      "type": "self",
-      "dimensions": ["boundary"],
-      "prompt": {
-        "conservative": "如果对方越界，你通常能让对方知道你的真实感受。",
-        "direct": "别人踩线时，你多半会让对方知道。"
-      },
-      "effectsByValue": { "1": { "boundary": 0 }, "2": { "boundary": 1.25 }, "3": { "boundary": 2.5 }, "4": { "boundary": 3.75 }, "5": { "boundary": 5 } }
-    },
-    {
-      "id": "drive-self-1",
-      "type": "self",
-      "dimensions": ["drive"],
-      "prompt": {
-        "conservative": "即使没有人催促，你也常会主动推进手头事务。",
-        "direct": "没人盯着，你也会自己把事往前推。"
-      },
-      "effectsByValue": { "1": { "drive": 0 }, "2": { "drive": 1.25 }, "3": { "drive": 2.5 }, "4": { "drive": 3.75 }, "5": { "drive": 5 } }
-    },
-    {
-      "id": "drive-self-2",
-      "type": "self",
-      "dimensions": ["drive"],
-      "prompt": {
-        "conservative": "目标确定后，你通常愿意尽快进入执行而不是长时间停留在准备阶段。",
-        "direct": "方向定了，你更容易直接开干，不会一直预热。"
-      },
-      "effectsByValue": { "1": { "drive": 0 }, "2": { "drive": 1.25 }, "3": { "drive": 2.5 }, "4": { "drive": 3.75 }, "5": { "drive": 5 } }
-    },
-    {
-      "id": "drive-self-3",
-      "type": "self",
-      "dimensions": ["drive"],
-      "prompt": {
-        "conservative": "在任务中断后，你通常能重新拉起推进节奏。",
-        "direct": "事情断档后，你也能把节奏再拽回来。"
-      },
-      "effectsByValue": { "1": { "drive": 0 }, "2": { "drive": 1.25 }, "3": { "drive": 2.5 }, "4": { "drive": 3.75 }, "5": { "drive": 5 } }
-    },
-    {
-      "id": "drive-self-4",
-      "type": "self",
-      "dimensions": ["drive"],
-      "prompt": {
-        "conservative": "面对需要持续投入的事情，你相对能保持稳定动能。",
-        "direct": "事要长期做时，你通常还能稳住持续输出。"
-      },
-      "effectsByValue": { "1": { "drive": 0 }, "2": { "drive": 1.25 }, "3": { "drive": 2.5 }, "4": { "drive": 3.75 }, "5": { "drive": 5 } }
-    },
-    {
-      "id": "sensitivity-self-1",
-      "type": "self",
-      "dimensions": ["sensitivity"],
-      "prompt": {
-        "conservative": "进入新环境时，你常会先留意气氛和细节变化。",
-        "direct": "刚到一个地方，你会很快感觉到气氛和细节差异。"
-      },
-      "effectsByValue": { "1": { "sensitivity": 0 }, "2": { "sensitivity": 1.25 }, "3": { "sensitivity": 2.5 }, "4": { "sensitivity": 3.75 }, "5": { "sensitivity": 5 } }
-    },
-    {
-      "id": "sensitivity-self-2",
-      "type": "self",
-      "dimensions": ["sensitivity"],
-      "prompt": {
-        "conservative": "他人表达中的停顿、语气或微小变化，容易引起你的注意。",
-        "direct": "别人说话时一点停顿或语气变了，你通常能察觉。"
-      },
-      "effectsByValue": { "1": { "sensitivity": 0 }, "2": { "sensitivity": 1.25 }, "3": { "sensitivity": 2.5 }, "4": { "sensitivity": 3.75 }, "5": { "sensitivity": 5 } }
-    },
-    {
-      "id": "sensitivity-self-3",
-      "type": "self",
-      "dimensions": ["sensitivity"],
-      "prompt": {
-        "conservative": "你经常能在明显问题出现前，先感到哪里有些不对劲。",
-        "direct": "很多问题还没爆出来前，你已经先觉得不太对。"
-      },
-      "effectsByValue": { "1": { "sensitivity": 0 }, "2": { "sensitivity": 1.25 }, "3": { "sensitivity": 2.5 }, "4": { "sensitivity": 3.75 }, "5": { "sensitivity": 5 } }
-    },
-    {
-      "id": "sensitivity-self-4",
-      "type": "self",
-      "dimensions": ["sensitivity"],
-      "prompt": {
-        "conservative": "同一件事里，你会自然注意到别人忽略的小线索。",
-        "direct": "一件事里你常能看到别人没留意的小信号。"
-      },
-      "effectsByValue": { "1": { "sensitivity": 0 }, "2": { "sensitivity": 1.25 }, "3": { "sensitivity": 2.5 }, "4": { "sensitivity": 3.75 }, "5": { "sensitivity": 5 } }
-    },
-    {
-      "id": "reflection-self-1",
-      "type": "self",
-      "dimensions": ["reflection"],
-      "prompt": {
-        "conservative": "事情结束后，你常会回看自己当时的想法和反应。",
-        "direct": "一件事过后，你通常会复盘自己当时怎么想、怎么反应。"
-      },
-      "effectsByValue": { "1": { "reflection": 0 }, "2": { "reflection": 1.25 }, "3": { "reflection": 2.5 }, "4": { "reflection": 3.75 }, "5": { "reflection": 5 } }
-    },
-    {
-      "id": "reflection-self-2",
-      "type": "self",
-      "dimensions": ["reflection"],
-      "prompt": {
-        "conservative": "当情绪出现波动时，你倾向追问背后的原因。",
-        "direct": "情绪一变，你会忍不住追究它为什么会这样。"
-      },
-      "effectsByValue": { "1": { "reflection": 0 }, "2": { "reflection": 1.25 }, "3": { "reflection": 2.5 }, "4": { "reflection": 3.75 }, "5": { "reflection": 5 } }
-    },
-    {
-      "id": "reflection-self-3",
-      "type": "self",
-      "dimensions": ["reflection"],
-      "prompt": {
-        "conservative": "你容易从重复经历中总结自己的固定模式。",
-        "direct": "同类事情反复发生时，你会去找自己一贯的模式。"
-      },
-      "effectsByValue": { "1": { "reflection": 0 }, "2": { "reflection": 1.25 }, "3": { "reflection": 2.5 }, "4": { "reflection": 3.75 }, "5": { "reflection": 5 } }
-    },
-    {
-      "id": "reflection-self-4",
-      "type": "self",
-      "dimensions": ["reflection"],
-      "prompt": {
-        "conservative": "做出重要选择后，你会持续检视它是否符合内在动机。",
-        "direct": "做了关键决定后，你会继续想这到底是不是你真想要的。"
-      },
-      "effectsByValue": { "1": { "reflection": 0 }, "2": { "reflection": 1.25 }, "3": { "reflection": 2.5 }, "4": { "reflection": 3.75 }, "5": { "reflection": 5 } }
-    },
-    {
-      "id": "cross-1",
-      "type": "cross",
-      "dimensions": ["adaptation", "decision"],
-      "prompt": {
-        "conservative": "当局面变化又必须尽快回应时，你通常能边判断边调整，而不是完全停住。",
-        "direct": "情况一变还得马上决定时，你多半能一边改路一边拍板，不会直接宕住。"
-      },
-      "effectsByValue": { "1": { "adaptation": 0, "decision": 0 }, "2": { "adaptation": 0.75, "decision": 0.5 }, "3": { "adaptation": 1.5, "decision": 1 }, "4": { "adaptation": 2.25, "decision": 1.5 }, "5": { "adaptation": 3, "decision": 2 } }
-    },
-    {
-      "id": "cross-2",
-      "type": "cross",
-      "dimensions": ["adaptation", "drive"],
-      "prompt": {
-        "conservative": "任务推进过程中如果条件改变，你仍愿意继续寻找可行做法。",
-        "direct": "推进到一半条件变了，你通常还会继续找办法把事推下去。"
-      },
-      "effectsByValue": { "1": { "adaptation": 0, "drive": 0 }, "2": { "adaptation": 0.69, "drive": 0.56 }, "3": { "adaptation": 1.38, "drive": 1.12 }, "4": { "adaptation": 2.07, "drive": 1.69 }, "5": { "adaptation": 2.75, "drive": 2.25 } }
-    },
-    {
-      "id": "cross-3",
-      "type": "cross",
-      "dimensions": ["adaptation", "sensitivity"],
-      "prompt": {
-        "conservative": "你会因为察觉到环境细微变化，而主动微调自己的应对方式。",
-        "direct": "你一感觉到气氛或细节变了，就会马上调整自己的做法。"
-      },
-      "effectsByValue": { "1": { "adaptation": 0, "sensitivity": 0 }, "2": { "adaptation": 0.63, "sensitivity": 0.63 }, "3": { "adaptation": 1.25, "sensitivity": 1.25 }, "4": { "adaptation": 1.88, "sensitivity": 1.88 }, "5": { "adaptation": 2.5, "sensitivity": 2.5 } }
-    },
-    {
-      "id": "cross-4",
-      "type": "cross",
-      "dimensions": ["decision", "boundary"],
-      "prompt": {
-        "conservative": "当外界期待与你的实际承受能力不一致时，你通常能做出取舍。",
-        "direct": "别人期待过头时，你通常能决定要不要接，而不是硬扛到底。"
-      },
-      "effectsByValue": { "1": { "decision": 0, "boundary": 0 }, "2": { "decision": 0.75, "boundary": 0.5 }, "3": { "decision": 1.5, "boundary": 1 }, "4": { "decision": 2.25, "boundary": 1.5 }, "5": { "decision": 3, "boundary": 2 } }
-    },
-    {
-      "id": "cross-5",
-      "type": "cross",
-      "dimensions": ["decision", "reflection"],
-      "prompt": {
-        "conservative": "在重要抉择前，你会先整理自己的真实动机，再形成判断。",
-        "direct": "做关键决定前，你通常会先想清楚自己到底为什么要这样选。"
-      },
-      "effectsByValue": { "1": { "decision": 0, "reflection": 0 }, "2": { "decision": 0.56, "reflection": 0.69 }, "3": { "decision": 1.12, "reflection": 1.38 }, "4": { "decision": 1.69, "reflection": 2.06 }, "5": { "decision": 2.25, "reflection": 2.75 } }
-    },
-    {
-      "id": "cross-6",
-      "type": "cross",
-      "dimensions": ["boundary", "drive"],
-      "prompt": {
-        "conservative": "你更愿意把精力投向真正认同的事情，而不是对所有请求平均用力。",
-        "direct": "你会把力气留给自己认可的事，不会什么都一样拼命接。"
-      },
-      "effectsByValue": { "1": { "boundary": 0, "drive": 0 }, "2": { "boundary": 0.56, "drive": 0.69 }, "3": { "boundary": 1.12, "drive": 1.38 }, "4": { "boundary": 1.69, "drive": 2.06 }, "5": { "boundary": 2.25, "drive": 2.75 } }
-    },
-    {
-      "id": "cross-7",
-      "type": "cross",
-      "dimensions": ["boundary", "sensitivity"],
-      "prompt": {
-        "conservative": "当感受到关系中的不对等时，你会意识到自己需要重新设定距离。",
-        "direct": "一旦感觉关系失衡，你通常会意识到自己该把距离拉回来。"
-      },
-      "effectsByValue": { "1": { "boundary": 0, "sensitivity": 0 }, "2": { "boundary": 0.63, "sensitivity": 0.63 }, "3": { "boundary": 1.25, "sensitivity": 1.25 }, "4": { "boundary": 1.88, "sensitivity": 1.88 }, "5": { "boundary": 2.5, "sensitivity": 2.5 } }
-    },
-    {
-      "id": "cross-8",
-      "type": "cross",
-      "dimensions": ["drive", "reflection"],
-      "prompt": {
-        "conservative": "你会根据复盘结果主动修正做法，而不是只停留在想法层面。",
-        "direct": "你复盘完通常会真改做法，不只是想一想就算了。"
-      },
-      "effectsByValue": { "1": { "drive": 0, "reflection": 0 }, "2": { "drive": 0.69, "reflection": 0.56 }, "3": { "drive": 1.38, "reflection": 1.12 }, "4": { "drive": 2.06, "reflection": 1.69 }, "5": { "drive": 2.75, "reflection": 2.25 } }
-    },
-    {
-      "id": "cross-9",
-      "type": "cross",
-      "dimensions": ["sensitivity", "reflection"],
-      "prompt": {
-        "conservative": "你对细节的感受常会引发进一步思考，帮助你理解自己的反应来源。",
-        "direct": "你一捕捉到细节变化，往往就会继续往下想自己为什么会有那个反应。"
-      },
-      "effectsByValue": { "1": { "sensitivity": 0, "reflection": 0 }, "2": { "sensitivity": 0.69, "reflection": 0.56 }, "3": { "sensitivity": 1.38, "reflection": 1.12 }, "4": { "sensitivity": 2.06, "reflection": 1.69 }, "5": { "sensitivity": 2.75, "reflection": 2.25 } }
-    },
-    {
-      "id": "cross-10",
-      "type": "cross",
-      "dimensions": ["adaptation", "decision"],
-      "prompt": {
-        "conservative": "时间有限时，你能在不完美信息里做出足以推进下一步的选择。",
-        "direct": "时间紧时，就算信息不全，你也能先做一个能继续往前的决定。"
-      },
-      "effectsByValue": { "1": { "adaptation": 0, "decision": 0 }, "2": { "adaptation": 0.5, "decision": 0.75 }, "3": { "adaptation": 1, "decision": 1.5 }, "4": { "adaptation": 1.5, "decision": 2.25 }, "5": { "adaptation": 2, "decision": 3 } }
-    },
-    {
-      "id": "cross-11",
-      "type": "cross",
-      "dimensions": ["boundary", "drive"],
-      "prompt": {
-        "conservative": "你会在保护自身节奏的同时，尽量维持关键事项的推进。",
-        "direct": "你既会护住自己的节奏，也会尽量把重要的事继续往前推。"
-      },
-      "effectsByValue": { "1": { "boundary": 0, "drive": 0 }, "2": { "boundary": 0.69, "drive": 0.56 }, "3": { "boundary": 1.38, "drive": 1.12 }, "4": { "boundary": 2.06, "drive": 1.69 }, "5": { "boundary": 2.75, "drive": 2.25 } }
-    },
-    {
-      "id": "cross-12",
-      "type": "cross",
-      "dimensions": ["sensitivity", "reflection"],
-      "prompt": {
-        "conservative": "当你察觉自己状态变化时，通常会追溯它与近期事件之间的联系。",
-        "direct": "你一发现自己状态不对，通常会往回找最近是什么把你触发了。"
-      },
-      "effectsByValue": { "1": { "sensitivity": 0, "reflection": 0 }, "2": { "sensitivity": 0.56, "reflection": 0.69 }, "3": { "sensitivity": 1.12, "reflection": 1.38 }, "4": { "sensitivity": 1.69, "reflection": 2.06 }, "5": { "sensitivity": 2.25, "reflection": 2.75 } }
-    }
-  ],
-  "results": [
-    {
-      "code": "AKSPHC",
-      "name": { "conservative": "稳态观察者", "direct": "低波动观察者" },
-      "summary": {
-        "conservative": "你更习惯先观察、再确认、再行动。整体节奏稳定，风险偏好较低，面对复杂场面时常以稳住自己为先。",
-        "direct": "你不是那种一上来就冲的人。你更像先看清局势、确认安全边界，再决定要不要动。"
-      },
-      "illustrationUrl": "/illustrations/steady-observer.svg"
-    },
-    {
-      "code": "MDLGQY",
-      "name": { "conservative": "平衡推进者", "direct": "均衡推进型" },
-      "summary": {
-        "conservative": "你在判断、边界和行动之间保持相对均衡，既能推进事情，也能适度照看关系与自身节奏。",
-        "direct": "你不算极端型人格，更多是能推事、能看人、也能收住自己的那类人。"
-      },
-      "illustrationUrl": "/illustrations/balanced-spectrum.svg"
-    },
-    {
-      "code": "VDXTNZ",
-      "name": { "conservative": "锋面引擎", "direct": "高压突进者" },
-      "summary": {
-        "conservative": "你对变化上手快、行动阈值低、边界清晰，往往能在高压情境中快速定调并持续推进。",
-        "direct": "你属于能扛压、能拍板、能推进的类型，很多人还在看局面时你已经开始往前冲了。"
-      },
-      "illustrationUrl": "/illustrations/surge-driver.svg"
-    }
-  ],
-  "fallbackResults": {
-    "highDrive": {
-      "name": { "conservative": "高驱动复合型", "direct": "高压推进型" },
-      "summary": {
-        "conservative": "你的多个维度同时处于高位，更像一类具有明显主动性与推动感的复合人格结构。",
-        "direct": "你整体偏高驱动，反应快、推进强、很难长期停在原地。"
-      },
-      "illustrationUrl": "/illustrations/surge-driver.svg"
-    },
-    "lowWave": {
-      "name": { "conservative": "稳态观察型", "direct": "低波动守成型" },
-      "summary": {
-        "conservative": "你的整体倾向更稳定克制，重视观察、缓冲与确定性，通常不会轻易把自己推入高波动状态。",
-        "direct": "你整体更稳，不爱乱冲，也不会轻易把自己卷进高强度变化里。"
-      },
-      "illustrationUrl": "/illustrations/steady-observer.svg"
-    },
-    "balanced": {
-      "name": { "conservative": "均衡光谱型", "direct": "混合适配型" },
-      "summary": {
-        "conservative": "你的六维结果没有明显单边压制，更像一种会随情境变化而调节策略的平衡型结构。",
-        "direct": "你不是单一套路的人，更多是看场景切换做法，属于混合适配型。"
-      },
-      "illustrationUrl": "/illustrations/balanced-spectrum.svg"
-    }
-  },
   "disclaimer": {
-    "conservative": "本测试结果仅用于自我观察与交流参考，不构成医疗、心理诊断或职业决策依据。人格状态会随阶段、情境与压力水平变化，请结合现实经验综合理解。",
-    "direct": "这份结果只适合拿来做自我观察和交流参考，不是医疗、心理诊断或职业建议。人的状态会变，别把一次结果当终局。"
+    "conservative": "本测试结果仅用于自我观察与交流参考，不构成医疗、心理诊断、关系建议或风险评估结论。相关偏好会随阶段、经验、关系与安全感变化，请结合现实边界与充分同意原则理解。",
+    "direct": "这份结果只适合做自我观察，不是医疗、诊断或关系建议。人的偏好会变，任何实践都应以边界、同意和安全为前提。"
   }
 }

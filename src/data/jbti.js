@@ -1,16 +1,20 @@
-import config from './jbti-config.json';
+import config from './jbti-config.json' with { type: 'json' };
+import dimensions from './jbti-dimensions.json' with { type: 'json' };
+import questions from './jbti-questions.json' with { type: 'json' };
+import resultsA from './jbti-results-a.json' with { type: 'json' };
+import resultsB from './jbti-results-b.json' with { type: 'json' };
+import resultsC from './jbti-results-c.json' with { type: 'json' };
 
 export const MODES = config.modes;
 export const UI_COPY = config.ui;
-export const DIMENSIONS = config.dimensions;
+export const DIMENSIONS = dimensions;
 export const LIKERT_OPTIONS = config.likertOptions;
 export const DISCLAIMER = config.disclaimer;
 export const RESULT_PRESETS = Object.fromEntries(
-  config.results.map((item) => [item.code, item])
+  [...resultsA, ...resultsB, ...resultsC].map((item) => [item.code, item])
 );
-export const FALLBACK_RESULTS = config.fallbackResults;
 
-export const QUESTIONS = config.questions.map((question) => ({
+export const QUESTIONS = questions.map((question) => ({
   ...question,
   conservative: question.prompt.conservative,
   direct: question.prompt.direct,

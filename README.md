@@ -9,6 +9,7 @@
 - 六维评分引擎、本地计算、6 字母代码输出
 - 自定义 SVG 雷达图
 - 维度描述、结果名称、简单总结、插画位、免责声明模板
+- 维度 / 题库 / 结果拆分成多份 JSON，便于人工维护
 
 ## 本地启动
 
@@ -29,22 +30,39 @@ npm run build
 src/
   App.jsx                 页面流程与交互
   theme.js                双模式主题
-  data/jbti-config.json   维度、题库、选项分值、结果与文案总配置
+  data/jbti-config.json   通用 UI 文案、量表选项、免责声明
+  data/jbti-dimensions.json  6 个维度定义与强弱关联计划
+  data/jbti-questions.json   36 道题骨架与 effectsByValue
+  data/jbti-results-*.json   729 种结果代码占位
   data/jbti.js            JSON 配置适配层
   utils/scoring.js        计分引擎
   components/
     ModeToggle.jsx        模式切换
     RadarChart.jsx        雷达图
+scripts/
+  generate-jbti-data.mjs  重新生成拆分 JSON 的脚本
 ```
 
 ## 目前使用的是演示数据
 
 当前项目中的以下内容是为了让骨架可以直接运行而填入的示例值，后续可按你的正式方案替换：
 
-- 6 个维度名称
-- 每个维度的低 / 中 / 高字母映射
-- 36 道题目的双模式示例文案
+- 6 个维度的默认字母映射
+- 36 道题的双模式占位文案
+- 729 个结果代码的默认占位名称与占位总结
+- 插画默认映射规则
 - 结果页维度描述
-- 部分整体人格标签映射
 
-建议你下一步优先替换 `src/data/jbti-config.json` 中的数据内容，不需要改动页面逻辑。
+建议优先修改这些文件：
+
+- `src/data/jbti-dimensions.json`
+- `src/data/jbti-questions.json`
+- `src/data/jbti-results-a.json`
+- `src/data/jbti-results-b.json`
+- `src/data/jbti-results-c.json`
+
+如果你调整了基础维度结构，可以运行：
+
+```bash
+node scripts/generate-jbti-data.mjs
+```

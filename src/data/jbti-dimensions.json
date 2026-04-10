@@ -1,0 +1,338 @@
+[
+  {
+    "id": "sexual_desire_intensity",
+    "order": 1,
+    "name": {
+      "conservative": "性欲强度",
+      "direct": "欲望强度"
+    },
+    "codeLevels": {
+      "low": "A",
+      "medium": "B",
+      "high": "C"
+    },
+    "scoreRanges": {
+      "low": [
+        0,
+        39
+      ],
+      "medium": [
+        40,
+        69
+      ],
+      "high": [
+        70,
+        100
+      ]
+    },
+    "crossPlan": {
+      "selfQuestions": 4,
+      "strong": {
+        "dimensionId": "intensity_openness",
+        "count": 2
+      },
+      "weak": [
+        {
+          "dimensionId": "mind_body_orientation",
+          "count": 1
+        },
+        {
+          "dimensionId": "power_dynamic_tendency",
+          "count": 1
+        }
+      ]
+    },
+    "descriptions": {
+      "conservative": {
+        "low": "你对性冲动与主动欲求的体验相对克制，更容易受情境、安全感与整体状态影响。",
+        "medium": "你在欲望驱动与现实节奏之间较为平衡，既不会长期压低，也不会持续拉满。",
+        "high": "你对欲望信号的感知和驱动力通常更强，相关需求更容易进入你的注意中心。"
+      },
+      "direct": {
+        "low": "你的欲望驱动偏低，不太会长期被性冲动牵着走。",
+        "medium": "你的欲望强度比较居中，看状态、看关系、看场合。",
+        "high": "你的欲望驱动明显偏高，相关需求更容易顶到前排。"
+      }
+    }
+  },
+  {
+    "id": "sexual_spectrum_openness",
+    "order": 2,
+    "name": {
+      "conservative": "性谱系开放度",
+      "direct": "谱系开放度"
+    },
+    "codeLevels": {
+      "low": "D",
+      "medium": "E",
+      "high": "F"
+    },
+    "scoreRanges": {
+      "low": [
+        0,
+        39
+      ],
+      "medium": [
+        40,
+        69
+      ],
+      "high": [
+        70,
+        100
+      ]
+    },
+    "crossPlan": {
+      "selfQuestions": 4,
+      "strong": {
+        "dimensionId": "relationship_openness",
+        "count": 2
+      },
+      "weak": [
+        {
+          "dimensionId": "intensity_openness",
+          "count": 1
+        },
+        {
+          "dimensionId": "power_dynamic_tendency",
+          "count": 1
+        }
+      ]
+    },
+    "descriptions": {
+      "conservative": {
+        "low": "你对性相关光谱、边界与尝试范围的接受度较谨慎，更偏向清晰、熟悉与可预期。",
+        "medium": "你对不同性表达和体验方式持相对开放但有筛选的态度，会看安全感与具体契合度。",
+        "high": "你对性相关光谱和可能性更开放，通常更能接受多样化的设定、表达和体验范围。"
+      },
+      "direct": {
+        "low": "你的性谱系开放度偏低，不太想碰太陌生或太跳脱的设定。",
+        "medium": "你可以接受一些变化，但会先判断适不适合自己。",
+        "high": "你的开放度偏高，对不同玩法、表达和边界形式更容易保持开放。"
+      }
+    }
+  },
+  {
+    "id": "intensity_openness",
+    "order": 3,
+    "name": {
+      "conservative": "性烈度开放度",
+      "direct": "烈度开放度"
+    },
+    "codeLevels": {
+      "low": "G",
+      "medium": "H",
+      "high": "I"
+    },
+    "scoreRanges": {
+      "low": [
+        0,
+        39
+      ],
+      "medium": [
+        40,
+        69
+      ],
+      "high": [
+        70,
+        100
+      ]
+    },
+    "crossPlan": {
+      "selfQuestions": 4,
+      "strong": {
+        "dimensionId": "sexual_desire_intensity",
+        "count": 2
+      },
+      "weak": [
+        {
+          "dimensionId": "power_dynamic_tendency",
+          "count": 1
+        },
+        {
+          "dimensionId": "mind_body_orientation",
+          "count": 1
+        }
+      ]
+    },
+    "descriptions": {
+      "conservative": {
+        "low": "你对更高烈度、更刺激或更失控感的性体验接受度偏低，倾向温和、可控与循序推进。",
+        "medium": "你对烈度的接受度居中，会视对象、情绪和安全边界决定是否上调强度。",
+        "high": "你对更高刺激度、强烈感或张力更开放，往往不排斥更高烈度的体验设计。"
+      },
+      "direct": {
+        "low": "你不太吃高烈度路线，更偏向温和、稳一点、可控一点。",
+        "medium": "你对烈度没有死板倾向，主要看人和当下状态。",
+        "high": "你对高刺激、高张力、更强烈的体验接受度更高。"
+      }
+    }
+  },
+  {
+    "id": "mind_body_orientation",
+    "order": 4,
+    "name": {
+      "conservative": "精神肉体倾向",
+      "direct": "精神/肉体倾向"
+    },
+    "codeLevels": {
+      "low": "J",
+      "medium": "K",
+      "high": "L"
+    },
+    "scoreRanges": {
+      "low": [
+        0,
+        39
+      ],
+      "medium": [
+        40,
+        69
+      ],
+      "high": [
+        70,
+        100
+      ]
+    },
+    "crossPlan": {
+      "selfQuestions": 4,
+      "strong": {
+        "dimensionId": "sexual_desire_intensity",
+        "count": 2
+      },
+      "weak": [
+        {
+          "dimensionId": "power_dynamic_tendency",
+          "count": 1
+        },
+        {
+          "dimensionId": "intensity_openness",
+          "count": 1
+        }
+      ]
+    },
+    "descriptions": {
+      "conservative": {
+        "low": "你更偏向肉体感受与即时体验本身，未必需要大量精神联结才能进入状态。",
+        "medium": "你在精神联结与身体体验之间较为均衡，通常两者都会影响你的投入质量。",
+        "high": "你更看重精神联结、情绪张力与心理层面的契合，纯身体刺激未必足够。"
+      },
+      "direct": {
+        "low": "你更偏身体向，不一定需要很强的心灵连结才有感觉。",
+        "medium": "你两边都看，既要感觉也要状态。",
+        "high": "你明显更偏精神向，心理连接不到位时身体刺激也未必够用。"
+      }
+    }
+  },
+  {
+    "id": "power_dynamic_tendency",
+    "order": 5,
+    "name": {
+      "conservative": "权力动态倾向",
+      "direct": "权力动态倾向"
+    },
+    "codeLevels": {
+      "low": "M",
+      "medium": "N",
+      "high": "O"
+    },
+    "scoreRanges": {
+      "low": [
+        0,
+        39
+      ],
+      "medium": [
+        40,
+        69
+      ],
+      "high": [
+        70,
+        100
+      ]
+    },
+    "crossPlan": {
+      "selfQuestions": 4,
+      "strong": {
+        "dimensionId": "intensity_openness",
+        "count": 2
+      },
+      "weak": [
+        {
+          "dimensionId": "mind_body_orientation",
+          "count": 1
+        },
+        {
+          "dimensionId": "relationship_openness",
+          "count": 1
+        }
+      ]
+    },
+    "descriptions": {
+      "conservative": {
+        "low": "你对明显的权力差、控制感设计或角色动态兴趣较低，更偏向平衡、对等与自然流动。",
+        "medium": "你对权力动态没有绝对排斥或绝对偏好，更多取决于关系、信任和情境氛围。",
+        "high": "你对控制、交付、主导或服从等权力动态更敏感，也更可能把它视为核心张力来源。"
+      },
+      "direct": {
+        "low": "你不太吃权力差那一套，更偏平等自然一点。",
+        "medium": "你对权力动态可接受，但不一定把它当核心。",
+        "high": "你对主导、服从、控制感这类张力更有感觉。"
+      }
+    }
+  },
+  {
+    "id": "relationship_openness",
+    "order": 6,
+    "name": {
+      "conservative": "关系开放度",
+      "direct": "关系开放度"
+    },
+    "codeLevels": {
+      "low": "P",
+      "medium": "Q",
+      "high": "R"
+    },
+    "scoreRanges": {
+      "low": [
+        0,
+        39
+      ],
+      "medium": [
+        40,
+        69
+      ],
+      "high": [
+        70,
+        100
+      ]
+    },
+    "crossPlan": {
+      "selfQuestions": 4,
+      "strong": {
+        "dimensionId": "sexual_spectrum_openness",
+        "count": 2
+      },
+      "weak": [
+        {
+          "dimensionId": "sexual_desire_intensity",
+          "count": 1
+        },
+        {
+          "dimensionId": "power_dynamic_tendency",
+          "count": 1
+        }
+      ]
+    },
+    "descriptions": {
+      "conservative": {
+        "low": "你对关系边界的开放方式较谨慎，更偏好排他、稳定与较少变量的结构。",
+        "medium": "你对关系开放度保持审慎弹性，会结合价值观、安全感与关系质量做判断。",
+        "high": "你对关系结构与边界安排更开放，较能接受非单一路径的连接形式。"
+      },
+      "direct": {
+        "low": "你更偏排他和稳定，不太想把关系边界开太大。",
+        "medium": "你对关系开放度是审慎中立的，要看具体条件。",
+        "high": "你对关系边界更开放，不会默认只有一种连接方式。"
+      }
+    }
+  }
+]
